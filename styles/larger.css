@@ -1,0 +1,23 @@
+@media (min-width: 768px) {
+  #nav-button {
+    display: none;
+  }
+  .navigation {
+    display: block;
+    border-top: none;
+    background: transparent;
+  }
+  .navigation ul {
+    flex-direction: row;
+    gap: 8px;
+    padding: 10px 0;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+  }
+  section {
+    padding: 16px 0;
+  }
+}
