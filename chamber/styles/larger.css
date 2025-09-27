@@ -1,0 +1,121 @@
+@media only screen and (min-width: 32rem) { 
+    .header-content {
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap; 
+        gap: 0; 
+    }
+
+    .chamber-logo {
+        height: 60px; 
+        margin-right: 15px;
+    }
+
+    .logo-link {
+        margin-bottom: 0; 
+    }
+    
+    .main-nav {
+        width: auto; 
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .menu-button {
+        display: none; 
+    }
+
+    .nav-links {
+        display: flex; 
+        flex-direction: row; 
+        border-top: none; 
+        margin-top: 0; 
+    }
+
+    .nav-links li {
+        width: auto;
+    }
+
+    .nav-links li a {
+        padding: 0.8rem 1.2rem; 
+        border-bottom: none; 
+        border-radius: 5px; 
+    }
+
+    h1 {
+        font-size: 2.5rem; 
+    }
+    
+    .view-controls {
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .view-toggle {
+        width: auto; 
+        justify-content: flex-end; 
+    }
+    
+    .view-button {
+        flex: none; 
+    }
+
+    #member-display.grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    }
+
+    
+    #member-display.list .member-card {
+        flex-direction: row; 
+        align-items: center;
+        justify-content: flex-start; 
+        gap: 20px; 
+    }
+
+    #member-display.list .member-card img {
+        max-width: 80px; 
+        margin-bottom: 0;
+    }
+
+    #member-display.list .member-card h2 {
+        font-size: 1.3rem;
+        flex-basis: 20%; 
+        margin-bottom: 0;
+    }
+
+    #member-display.list .member-card p,
+    #member-display.list .member-card a,
+    #member-display.list .member-card .membership-level {
+        font-size: 0.95rem; 
+        flex-basis: 15%; 
+        margin: 0;
+    }
+
+    #member-display.list .member-card a {
+        flex-basis: 20%;
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis; 
+    }
+    #member-display.list .member-card .membership-level {
+        flex-basis: 10%;
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contact-info, .dev-info {
+        flex: 1 1 300px; 
+        text-align: left; 
+    }
+    .dev-info {
+        text-align: right; 
+    }
+}

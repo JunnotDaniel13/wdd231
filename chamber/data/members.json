@@ -1,0 +1,132 @@
+[
+  {
+    "name": "Mahogany Crafts & Decor",
+    "address": "15 Rue Rainilaiarivony, Antananarivo 101, Madagascar",
+    "phone": "+261 20 22 123 45",
+    "website": "https://mahoganycrafter.com",
+    "image": "mahogany-crafts.webp",
+    "membershipLevel": "Gold",
+    "otherInfo": {
+      "slogan": "Artisan woodwork inspired by Malagasy heritage.",
+      "category": "Retail, Handicrafts",
+      "contactPerson": "Raoelina Rajaonarivelo"
+    }
+  },
+  {
+    "name": "Baobab Software Solutions",
+    "address": "Bâtiment Innovation, Route Digue, Antananarivo 102, Madagascar",
+    "phone": "+261 20 22 987 65",
+    "website": "https://www.baobabsoft.mg",
+    "image": "baobab-software.webp",
+    "membershipLevel": "Silver",
+    "otherInfo": {
+      "slogan": "Tailored tech for Madagascar's growing businesses.",
+      "category": "Technology, Software Development",
+      "contactPerson": "Andry Rakotonirina"
+    }
+  },
+  {
+    "name": "Madagascar Ecotour Agency",
+    "address": "25 Avenue de l'Indépendance, Antananarivo 101, Madagascar",
+    "phone": "+261 20 22 567 89",
+    "website": "https://www.mgecotours.mg",
+    "image": "mg-ecotour.webp",
+    "membershipLevel": "Gold",
+    "otherInfo": {
+      "slogan": "Discover the wonders of the Big Island, responsibly.",
+      "category": "Tourism, Travel Agency",
+      "contactPerson": "Fanja Razafindrazaka"
+    }
+  },
+  {
+    "name": "Tana Fresh Produce Market",
+    "address": "Pavillon Analakely, Antananarivo 101, Madagascar",
+    "phone": "+261 20 22 345 67",
+    "website": "https://www.tanafresh.mg",
+    "image": "tana-fresh.webp",
+    "membershipLevel": "Member",
+    "otherInfo": {
+      "slogan": "The freshest local fruits and vegetables, daily.",
+      "category": "Retail, Groceries",
+      "contactPerson": "Jean-Luc Randrianarisoa"
+    }
+  },
+  {
+    "name": "Rova Real Estate Services",
+    "address": "10 Rue Docteur Ravoahangy, Antananarivo 101, Madagascar",
+    "phone": "+261 20 22 876 54",
+    "website": "https://www.rovarealestate.mg",
+    "image": "rova-realestate.webp",
+    "membershipLevel": "Silver",
+    "otherInfo": {
+      "slogan": "Your trusted partner in Antananarivo property.",
+      "category": "Real Estate, Property Management",
+      "contactPerson": "Mialy Rakotomalala"
+    }
+  },
+  {
+    "name": "Centre Culturel Malagasy",
+    "address": "67 Lalana Rabemananjara, Antananarivo 101, Madagascar",
+    "phone": "+261 20 22 111 00",
+    "website": "https://www.ccm-tana.org",
+    "image": "ccm-tana.webp",
+    "membershipLevel": "Non-Profit",
+    "otherInfo": {
+      "slogan": "Promoting and preserving Malagasy culture.",
+      "category": "Non-Profit, Arts & Culture",
+      "contactPerson": "Hery Andriamanantena"
+    }
+  },
+  {
+    "name": "Vanilla Bean Cafe",
+    "address": "40 Arabe Razafindrazaka, Antananarivo 101, Madagascar",
+    "phone": "+261 20 22 654 32",
+    "website": "https://www.vanillabeancafe.mg",
+    "image": "vanilla-bean-cafe.webp",
+    "membershipLevel": "Member",
+    "otherInfo": {
+      "slogan": "The sweet taste of Madagascar in every cup.",
+      "category": "Food & Drink, Cafe",
+      "contactPerson": "Sophie Ramanantsoa"
+    }
+  },
+  {
+    "name": "Highland Logistics Solutions",
+    "address": "Zone Industrielle Forello Tanjombato, Antananarivo 101, Madagascar",
+    "phone": "+261 20 22 098 76",
+    "website": "https://www.highlandlogistics.mg",
+    "image": "highland-logistics.webp",
+    "membershipLevel": "Gold",
+    "otherInfo": {
+      "slogan": "Connecting Madagascar to the world.",
+      "category": "Logistics, Transportation",
+      "contactPerson": "Patrick Ratsimbazafy"
+    }
+  },
+  {
+    "name": "Eco-Farming Madagascar",
+    "address": "Route Nationale 7, Sud Antananarivo, Madagascar",
+    "phone": "+261 20 22 543 21",
+    "website": "https://www.ecofarmingmg.org",
+    "image": "ecofarming-mg.webp",
+    "membershipLevel": "Non-Profit",
+    "otherInfo": {
+      "slogan": "Sustainable agriculture for a healthier Madagascar.",
+      "category": "Agriculture, Non-Profit",
+      "contactPerson": "Voahirana Randriamiarisoa"
+    }
+  },
+  {
+    "name": "Gazelle Express Couriers",
+    "address": "8 Lalana Pasteur, Antananarivo 101, Madagascar",
+    "phone": "+261 20 22 765 43",
+    "website": "https://www.gazelleexpress.mg",
+    "image": "gazelle-express.webp",
+    "membershipLevel": "Silver",
+    "otherInfo": {
+      "slogan": "Fast and reliable deliveries across Antananarivo.",
+      "category": "Logistics, Courier Services",
+      "contactPerson": "Toky Razafimahefa"
+    }
+  }
+]

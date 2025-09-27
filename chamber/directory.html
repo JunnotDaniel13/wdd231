@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Directory | Antananarivo Chamber of Commerce</title>
+    <meta name="description" content="Explore the directory of local businesses and members of the Antananarivo Chamber of Commerce.">
+    <meta name="author" content="Jerenason Junnot Daniel">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="Business Directory | Antananarivo Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://junnotdaniel13.github.io/wdd231/chamber/images/og-image.jpg">
+    <meta property="og:url" content="https://junnotdaniel13.github.io/wdd231/chamber/directory.html">
+    <meta property="og:description" content="Find local businesses and members in the Antananarivo area. Support local!">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo-link">
+                <img src="images/chamber-logo.png" alt="Antananarivo Chamber of Commerce Logo" class="chamber-logo">
+            </a>
+            <nav class="main-nav">
+                <button id="menuButton" class="menu-button">☰ Menu</button>
+                <ul class="nav-links">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html" class="active">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="directory-main">
+        <section class="view-controls">
+            <h1>Chamber Member Directory</h1>
+            <div class="view-toggle">
+                <button id="grid-view" class="view-button active">🖼️ Grid</button>
+                <button id="list-view" class="view-button">📄 List</button>
+            </div>
+        </section>
+
+        <section id="member-display" class="grid"></section> 
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Antananarivo Chamber of Commerce</h3>
+                <p>123 Lalana Ratsimilaho, Antananarivo 101, Madagascar</p>
+                <p>Email: info@antananarivochamber.org</p>
+            </div>
+            <div class="dev-info">
+                <p>&copy;<span id="current-year"></span> Jerenason Junnot Daniel | WDD 231</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
