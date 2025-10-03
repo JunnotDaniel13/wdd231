@@ -129,11 +129,18 @@
     }
 
     .hero-overlay {
+        justify-content: flex-start;
         padding: 4rem;
     }
 
     .hero-content {
         max-width: 36rem;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .cta-button {
+        align-self: flex-start;
     }
 
     .highlights {
