@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antananarivo Chamber of Commerce | Welcome</title>
+    <meta name="description" content="Discover the Antananarivo Chamber of Commerce. Explore events, local businesses, weather, and opportunities to join our community.">
+    <meta name="author" content="Jerenason Junnot Daniel">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="Antananarivo Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://junnotdaniel13.github.io/wdd231/chamber/images/og-image.png">
+    <meta property="og:url" content="https://junnotdaniel13.github.io/wdd231/chamber/index.html">
+    <meta property="og:description" content="Connect with businesses, resources, and opportunities in Antananarivo.">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/home.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo-link">
+                <img src="images/chamber-logo.webp" alt="Antananarivo Chamber of Commerce Logo" class="chamber-logo">
+            </a>
+            <nav class="main-nav">
+                <button id="menuButton" class="menu-button">☰ Menu</button>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="home-main">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <p class="hero-eyebrow">Antananarivo Chamber of Commerce</p>
+                    <h1 id="hero-title">Empowering Local Growth &amp; Collaboration</h1>
+                    <p class="hero-text">We connect businesses, entrepreneurs, and community leaders to create opportunities that strengthen Antananarivo&#39;s economy.</p>
+                    <a class="cta-button" href="join.html">Join the Chamber</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="highlights">
+            <article class="card events-card">
+                <h2>Upcoming Events</h2>
+                <ul class="event-list">
+                    <li>
+                        <h3>First Friday Networking Breakfast</h3>
+                        <p><time datetime="2024-02-02T08:00">February 2, 2024 · 8:00 AM</time> &ndash; Carlton Madagascar</p>
+                    </li>
+                    <li>
+                        <h3>Women in Business Roundtable</h3>
+                        <p><time datetime="2024-02-15T14:00">February 15, 2024 · 2:00 PM</time> &ndash; Impact Hub Antananarivo</p>
+                    </li>
+                    <li>
+                        <h3>Export Ready Workshop</h3>
+                        <p><time datetime="2024-03-05T09:30">March 5, 2024 · 9:30 AM</time> &ndash; Chambre de Commerce</p>
+                    </li>
+                </ul>
+                <a class="secondary-link" href="#">See full events calendar</a>
+            </article>
+
+            <article class="card weather-card" aria-live="polite">
+                <h2>Antananarivo Weather</h2>
+                <div class="current-weather">
+                    <div class="current-weather-info">
+                        <p class="current-temp"><span id="current-temp">--</span><span class="temp-unit">°C</span></p>
+                        <p id="current-description">Loading conditions...</p>
+                    </div>
+                    <figure class="weather-figure">
+                        <img id="weather-icon" src="" alt="" hidden>
+                        <figcaption id="weather-caption"></figcaption>
+                    </figure>
+                </div>
+                <div class="forecast">
+                    <h3>3-Day Forecast</h3>
+                    <ul id="forecast-list" class="forecast-list">
+                        <li>Loading forecast...</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <section class="spotlights" aria-labelledby="spotlight-title">
+            <div class="spotlights-header">
+                <h2 id="spotlight-title">Member Spotlights</h2>
+                <p>Discover standout gold and silver members making a difference in our community.</p>
+            </div>
+            <div id="spotlight-container" class="spotlight-container" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Antananarivo Chamber of Commerce</h3>
+                <p>123 Lalana Ratsimilaho, Antananarivo 101, Madagascar</p>
+                <p>Email: info@antananarivochamber.org</p>
+            </div>
+            <div class="dev-info">
+                <p>&copy;<span id="current-year"></span> Jerenason Junnot Daniel | WDD 231</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

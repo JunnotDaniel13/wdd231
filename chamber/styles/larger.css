@@ -68,7 +68,6 @@
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     }
 
-    
     #member-display.list .member-card {
         flex-direction: row; 
         align-items: center;
@@ -111,11 +110,66 @@
         justify-content: space-between;
         align-items: center;
     }
+
     .contact-info, .dev-info {
         flex: 1 1 300px; 
         text-align: left; 
     }
+
     .dev-info {
         text-align: right; 
+    }
+
+    .home-main {
+        gap: 3rem;
+    }
+
+    .hero {
+        min-height: 380px;
+    }
+
+    .hero-overlay {
+        padding: 4rem;
+    }
+
+    .hero-content {
+        max-width: 36rem;
+    }
+
+    .highlights {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .current-weather {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .weather-figure {
+        align-items: center;
+    }
+
+    .forecast-list {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.85rem;
+    }
+
+    .forecast-list li {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.35rem;
+        padding: 0.75rem;
+        border-radius: 10px;
+        background-color: rgba(63, 81, 181, 0.05);
+    }
+
+    .spotlight-container {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .spotlight-card {
+        padding: 1.75rem;
     }
 }
