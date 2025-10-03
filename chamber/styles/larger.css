@@ -164,12 +164,4 @@
         border-radius: 10px;
         background-color: rgba(63, 81, 181, 0.05);
     }
-
-    .spotlight-container {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    }
-
-    .spotlight-card {
-        padding: 1.75rem;
-    }
 }

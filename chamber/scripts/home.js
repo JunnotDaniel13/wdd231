@@ -7,7 +7,7 @@ const weatherIconEl = document.getElementById('weather-icon');
 const weatherCaptionEl = document.getElementById('weather-caption');
 const forecastListEl = document.getElementById('forecast-list');
 
-const API_KEY = '269473e260630827fd8e291ca904a5bb'; // Replace with your actual OpenWeatherMap key
+const API_KEY = '269473e260630827fd8e291ca904a5bb';
 const LATITUDE = -18.8792; // Antananarivo, Madagascar
 const LONGITUDE = 47.5079;
 const UNITS = 'metric';
@@ -273,47 +273,37 @@ async function parseJsonOrThrow(response, label) {
 }
 
 function createSpotlightCard(member) {
-    const card = document.createElement('article');
-    card.classList.add('spotlight-card');
+    let card = document.createElement('section');
+    card.classList.add('member-card');
 
-    const header = document.createElement('header');
-
-    const logo = document.createElement('img');
-    logo.src = `images/${member.image}`;
-    logo.alt = `${member.name} logo`;
-    logo.loading = 'lazy';
-
-    const title = document.createElement('h3');
-    title.textContent = member.name;
-
-    header.appendChild(logo);
-    header.appendChild(title);
-
-    const meta = document.createElement('div');
-    meta.classList.add('spotlight-meta');
-
-    const address = document.createElement('p');
+    let logo = document.createElement('img');
+    logo.setAttribute('src', `images/${member.image}`);
+    logo.setAttribute('alt', `Logo of ${member.name}`);
+    logo.setAttribute('loading', 'lazy');
+    
+    let name = document.createElement('h2');
+    name.textContent = member.name;
+    
+    let address = document.createElement('p');
     address.textContent = member.address;
-
-    const phone = document.createElement('p');
+    
+    let phone = document.createElement('p');
     phone.textContent = member.phone;
-
-    const website = document.createElement('a');
-    website.href = member.website;
-    website.target = '_blank';
-    website.rel = 'noopener';
+    
+    let website = document.createElement('a');
+    website.setAttribute('href', member.website);
+    website.setAttribute('target', '_blank');
     website.textContent = member.website.replace(/(^\w+:|^)\/\//, '');
-
-    meta.appendChild(address);
-    meta.appendChild(phone);
-    meta.appendChild(website);
-
-    const membership = document.createElement('span');
-    membership.classList.add('membership-pill');
-    membership.textContent = `${capitalize(member.membershipLevel)} Member`;
-
-    card.appendChild(header);
-    card.appendChild(meta);
+    
+    let membership = document.createElement('p');
+    membership.classList.add('membership-level');
+    membership.textContent = `Membership: ${member.membershipLevel}`;
+    
+    card.appendChild(logo);
+    card.appendChild(name);
+    card.appendChild(address);
+    card.appendChild(phone);
+    card.appendChild(website);
     card.appendChild(membership);
 
     return card;

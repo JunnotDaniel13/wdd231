@@ -33,8 +33,10 @@ h1 {
 }
 
 header {
+    background-color: var(--primary-color);
     color: var(--light-text-color);
     padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .header-content {
@@ -519,83 +521,6 @@ footer {
     justify-content: space-between;
     font-size: 0.95rem;
     color: #444;
-}
-
-.spotlights {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.spotlights-header {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.spotlights-header p {
-    margin: 0;
-    color: #555;
-}
-
-.spotlight-container {
-    display: grid;
-    gap: 1.5rem;
-}
-
-.spotlight-card {
-    background: #ffffff;
-    border: 1px solid rgba(63, 81, 181, 0.1);
-    border-radius: 12px;
-    padding: 1.5rem;
-    display: grid;
-    gap: 0.75rem;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-}
-
-.spotlight-card header {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-}
-
-.spotlight-card header img {
-    width: 64px;
-    height: 64px;
-    border-radius: 8px;
-    object-fit: contain;
-    background: #f7f7f7;
-}
-
-.spotlight-card header h3 {
-    margin: 0;
-    color: var(--primary-color);
-    font-size: 1.2rem;
-}
-
-.spotlight-card .spotlight-meta {
-    display: grid;
-    gap: 0.35rem;
-    font-size: 0.95rem;
-    color: #444;
-}
-
-.spotlight-card .spotlight-meta a {
-    color: var(--secondary-color);
-    text-decoration: none;
-    font-weight: 600;
-    word-break: break-word;
-}
-
-.spotlight-card .membership-pill {
-    display: inline-block;
-    align-self: flex-start;
-    padding: 0.35rem 0.75rem;
-    border-radius: 999px;
-    background: rgba(255, 152, 0, 0.15);
-    color: var(--secondary-color);
-    font-weight: 600;
-    font-size: 0.85rem;
 }
 
 @media (prefers-reduced-motion: reduce) {
