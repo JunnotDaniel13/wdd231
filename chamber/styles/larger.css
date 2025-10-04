@@ -171,4 +171,41 @@
         border-radius: 10px;
         background-color: rgba(63, 81, 181, 0.05);
     }
+
+    .join-intro {
+        text-align: left;
+        justify-items: flex-start;
+        max-width: 60ch;
+    }
+
+    .join-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+        align-items: start;
+        gap: 2.5rem;
+    }
+
+    .join-form {
+        padding: 2rem 2.25rem;
+    }
+
+    .membership-cards {
+        position: sticky;
+        top: 120px;
+    }
+
+    .thankyou-main {
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .thankyou-hero {
+        max-width: 60ch;
+    }
+
+    .confirmation-card {
+        max-width: 640px;
+        width: 100%;
+        padding: 2.25rem;
+    }
 }

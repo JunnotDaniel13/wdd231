@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Antananarivo Chamber of Commerce</title>
+    <meta name="description" content="Thank you for applying to join the Antananarivo Chamber of Commerce. Review the details of your submission.">
+    <meta name="author" content="Jerenason Junnot Daniel">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="Thank You for Joining the Antananarivo Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://junnotdaniel13.github.io/wdd231/chamber/images/og-image.png">
+    <meta property="og:url" content="https://junnotdaniel13.github.io/wdd231/chamber/thankyou.html">
+    <meta property="og:description" content="We appreciate your interest in the Antananarivo Chamber of Commerce. Here is a summary of your application.">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo-link">
+                <img src="images/chamber-logo.webp" alt="Antananarivo Chamber of Commerce Logo" class="chamber-logo">
+            </a>
+            <nav class="main-nav">
+                <button id="menuButton" class="menu-button">☰ Menu</button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html" class="active">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="thankyou-main">
+        <section class="thankyou-hero" aria-labelledby="thankyou-title">
+            <h1 id="thankyou-title">Thank You for Applying!</h1>
+            <p>Your membership application has been submitted. A member of our chamber team will reach out soon with next steps.</p>
+        </section>
+
+        <section class="confirmation-card" aria-labelledby="confirmation-title">
+            <h2 id="confirmation-title">Submission Summary</h2>
+            <dl class="submission-details">
+                <div>
+                    <dt>First Name</dt>
+                    <dd id="confirm-first-name">&mdash;</dd>
+                </div>
+                <div>
+                    <dt>Last Name</dt>
+                    <dd id="confirm-last-name">&mdash;</dd>
+                </div>
+                <div>
+                    <dt>Email</dt>
+                    <dd id="confirm-email">&mdash;</dd>
+                </div>
+                <div>
+                    <dt>Mobile</dt>
+                    <dd id="confirm-phone">&mdash;</dd>
+                </div>
+                <div>
+                    <dt>Organization</dt>
+                    <dd id="confirm-organization">&mdash;</dd>
+                </div>
+                <div>
+                    <dt>Submitted</dt>
+                    <dd id="confirm-timestamp">&mdash;</dd>
+                </div>
+            </dl>
+            <p class="confirmation-note">Need to make a change? <a href="join.html">Return to the application</a> to submit an updated form.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Antananarivo Chamber of Commerce</h3>
+                <p>123 Lalana Ratsimilaho, Antananarivo 101, Madagascar</p>
+                <p>Email: info@antananarivochamber.org</p>
+            </div>
+            <div class="dev-info">
+                <p>&copy;<span id="current-year"></span> Jerenason Junnot Daniel | WDD 231</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

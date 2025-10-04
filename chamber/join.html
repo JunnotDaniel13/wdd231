@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Chamber | Antananarivo Chamber of Commerce</title>
+    <meta name="description" content="Apply for membership with the Antananarivo Chamber of Commerce. Select the level that fits your organization and submit your details to get started.">
+    <meta name="author" content="Jerenason Junnot Daniel">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="Join the Antananarivo Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://junnotdaniel13.github.io/wdd231/chamber/images/og-image.png">
+    <meta property="og:url" content="https://junnotdaniel13.github.io/wdd231/chamber/join.html">
+    <meta property="og:description" content="Become a member of the Antananarivo Chamber of Commerce and unlock tailored benefits for your organization.">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo-link">
+                <img src="images/chamber-logo.webp" alt="Antananarivo Chamber of Commerce Logo" class="chamber-logo">
+            </a>
+            <nav class="main-nav">
+                <button id="menuButton" class="menu-button">☰ Menu</button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html" class="active">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="join-main">
+        <section class="join-intro" aria-labelledby="join-title">
+            <p class="intro-eyebrow">Membership Application</p>
+            <h1 id="join-title">Join the Antananarivo Chamber of Commerce</h1>
+            <p>Tell us about you and your organization so we can welcome you into the chamber. Review our membership options and submit your application using the form below.</p>
+        </section>
+
+        <section class="join-layout">
+            <form id="membershipForm" class="join-form" method="get" action="thankyou.html" aria-labelledby="form-title">
+                <h2 id="form-title">Applicant Details</h2>
+
+                <label for="first-name" class="form-field">
+                    <span>First Name<span aria-hidden="true">*</span></span>
+                    <input id="first-name" name="firstName" type="text" required autocomplete="given-name" title="Enter your first name" placeholder="e.g., Marie" />
+                </label>
+
+                <label for="last-name" class="form-field">
+                    <span>Last Name<span aria-hidden="true">*</span></span>
+                    <input id="last-name" name="lastName" type="text" required autocomplete="family-name" title="Enter your last name" placeholder="e.g., Rasoanaivo" />
+                </label>
+
+                <label for="org-title" class="form-field">
+                    <span>Organization Title</span>
+                    <input id="org-title" name="organizationTitle" type="text" autocomplete="organization-title" title="Use at least seven letters, spaces, or hyphens" pattern="[A-Za-z\s-]{7,}" placeholder="e.g., Executive Director" />
+                </label>
+
+                <label for="email" class="form-field">
+                    <span>Email Address<span aria-hidden="true">*</span></span>
+                    <input id="email" name="email" type="email" required autocomplete="email" title="Enter a valid email address" placeholder="name@example.com" />
+                </label>
+
+                <label for="phone" class="form-field">
+                    <span>Mobile Phone<span aria-hidden="true">*</span></span>
+                    <input id="phone" name="phone" type="tel" required autocomplete="tel" title="Enter your mobile phone number" placeholder="e.g., +261 32 12 345 67" />
+                </label>
+
+                <label for="organization" class="form-field">
+                    <span>Organization Name<span aria-hidden="true">*</span></span>
+                    <input id="organization" name="organization" type="text" required autocomplete="organization" title="Enter the name of your business or organization" placeholder="e.g., Tana Ventures" />
+                </label>
+
+                <label for="membership-level" class="form-field">
+                    <span>Membership Level<span aria-hidden="true">*</span></span>
+                    <select id="membership-level" name="membershipLevel" required title="Select the membership level that fits your organization">
+                        <option value="" disabled selected>Select a membership level</option>
+                        <option value="np">NP Membership (Non-profit)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label for="description" class="form-field">
+                    <span>Organization Description</span>
+                    <textarea id="description" name="organizationDescription" rows="5" title="Describe your organization and goals" placeholder="Tell us about your organization, focus areas, and goals."></textarea>
+                </label>
+
+                <input id="formTimestamp" name="timestamp" type="hidden">
+
+                <button type="submit" class="submit-button">Submit Application</button>
+            </form>
+
+            <section class="membership-cards" aria-labelledby="membership-title">
+                <h2 id="membership-title">Membership Levels</h2>
+                <article class="membership-card" data-order="1">
+                    <h3>NP Membership</h3>
+                    <p class="membership-price">No annual fee</p>
+                    <p class="membership-summary">Ideal for registered non-profit organizations seeking visibility and community resources.</p>
+                    <a class="membership-info-link" href="#np-benefits" data-modal-target="np-modal" aria-haspopup="dialog">View benefits</a>
+                </article>
+                <article class="membership-card" data-order="2">
+                    <h3>Bronze Membership</h3>
+                    <p class="membership-price">Ar 250,000 / year</p>
+                    <p class="membership-summary">Great for startups and small businesses ready to grow their network.</p>
+                    <a class="membership-info-link" href="#bronze-benefits" data-modal-target="bronze-modal" aria-haspopup="dialog">View benefits</a>
+                </article>
+                <article class="membership-card" data-order="3">
+                    <h3>Silver Membership</h3>
+                    <p class="membership-price">Ar 450,000 / year</p>
+                    <p class="membership-summary">Expand your reach with enhanced promotion and exclusive training opportunities.</p>
+                    <a class="membership-info-link" href="#silver-benefits" data-modal-target="silver-modal" aria-haspopup="dialog">View benefits</a>
+                </article>
+                <article class="membership-card" data-order="4">
+                    <h3>Gold Membership</h3>
+                    <p class="membership-price">Ar 750,000 / year</p>
+                    <p class="membership-summary">Designed for established leaders looking for premium exposure and strategic partnerships.</p>
+                    <a class="membership-info-link" href="#gold-benefits" data-modal-target="gold-modal" aria-haspopup="dialog">View benefits</a>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Antananarivo Chamber of Commerce</h3>
+                <p>123 Lalana Ratsimilaho, Antananarivo 101, Madagascar</p>
+                <p>Email: info@antananarivochamber.org</p>
+            </div>
+            <div class="dev-info">
+                <p>&copy;<span id="current-year"></span> Jerenason Junnot Daniel | WDD 231</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <dialog id="np-modal" class="membership-modal" aria-labelledby="np-modal-title">
+        <form method="dialog">
+            <h3 id="np-modal-title">NP Membership Benefits</h3>
+            <ul>
+                <li>Complimentary chamber membership for verified non-profit entities.</li>
+                <li>Access to monthly collaboration roundtables and grant-writing workshops.</li>
+                <li>Spotlight listing in our community service newsletter once per year.</li>
+                <li>Guidance on navigating public and private funding opportunities.</li>
+            </ul>
+            <button type="submit" class="modal-close" data-modal-close>Close</button>
+        </form>
+    </dialog>
+
+    <dialog id="bronze-modal" class="membership-modal" aria-labelledby="bronze-modal-title">
+        <form method="dialog">
+            <h3 id="bronze-modal-title">Bronze Membership Benefits</h3>
+            <ul>
+                <li>Invitation to quarterly business development workshops.</li>
+                <li>Business directory listing with social media links.</li>
+                <li>Discounted vendor booth rates at chamber events.</li>
+                <li>Access to the members-only resource library.</li>
+            </ul>
+            <button type="submit" class="modal-close" data-modal-close>Close</button>
+        </form>
+    </dialog>
+
+    <dialog id="silver-modal" class="membership-modal" aria-labelledby="silver-modal-title">
+        <form method="dialog">
+            <h3 id="silver-modal-title">Silver Membership Benefits</h3>
+            <ul>
+                <li>All Bronze benefits plus bi-monthly marketing clinics.</li>
+                <li>Featured article on the chamber home page once per year.</li>
+                <li>Priority referrals through our business concierge team.</li>
+                <li>Two complimentary tickets to signature networking events.</li>
+            </ul>
+            <button type="submit" class="modal-close" data-modal-close>Close</button>
+        </form>
+    </dialog>
+
+    <dialog id="gold-modal" class="membership-modal" aria-labelledby="gold-modal-title">
+        <form method="dialog">
+            <h3 id="gold-modal-title">Gold Membership Benefits</h3>
+            <ul>
+                <li>All Silver benefits plus quarterly strategic planning sessions.</li>
+                <li>Premium placement on the chamber website and newsletters.</li>
+                <li>Sponsored speaking opportunities at flagship chamber events.</li>
+                <li>Dedicated advocacy support for policy initiatives.</li>
+            </ul>
+            <button type="submit" class="modal-close" data-modal-close>Close</button>
+        </form>
+    </dialog>
+</body>
+</html>
