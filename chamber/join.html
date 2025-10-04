@@ -103,7 +103,7 @@
 
                 <input id="formTimestamp" name="timestamp" type="hidden">
 
-                <button type="submit" class="submit-button">Submit Application</button>
+                <input type="submit" class="submit-button" value="Submit Chamber Application">
             </form>
 
             <section class="membership-cards" aria-labelledby="membership-title">
@@ -151,7 +151,7 @@
     </footer>
 
     <dialog id="np-modal" class="membership-modal" aria-labelledby="np-modal-title">
-        <form method="dialog">
+        <div role="document" class="modal-content">
             <h3 id="np-modal-title">NP Membership Benefits</h3>
             <ul>
                 <li>Complimentary chamber membership for verified non-profit entities.</li>
@@ -159,12 +159,12 @@
                 <li>Spotlight listing in our community service newsletter once per year.</li>
                 <li>Guidance on navigating public and private funding opportunities.</li>
             </ul>
-            <button type="submit" class="modal-close" data-modal-close>Close</button>
-        </form>
+            <button type="button" class="modal-close" data-modal-close>Close</button>
+        </div>
     </dialog>
 
     <dialog id="bronze-modal" class="membership-modal" aria-labelledby="bronze-modal-title">
-        <form method="dialog">
+        <div role="document" class="modal-content">
             <h3 id="bronze-modal-title">Bronze Membership Benefits</h3>
             <ul>
                 <li>Invitation to quarterly business development workshops.</li>
@@ -172,12 +172,12 @@
                 <li>Discounted vendor booth rates at chamber events.</li>
                 <li>Access to the members-only resource library.</li>
             </ul>
-            <button type="submit" class="modal-close" data-modal-close>Close</button>
-        </form>
+            <button type="button" class="modal-close" data-modal-close>Close</button>
+        </div>
     </dialog>
 
     <dialog id="silver-modal" class="membership-modal" aria-labelledby="silver-modal-title">
-        <form method="dialog">
+        <div role="document" class="modal-content">
             <h3 id="silver-modal-title">Silver Membership Benefits</h3>
             <ul>
                 <li>All Bronze benefits plus bi-monthly marketing clinics.</li>
@@ -185,12 +185,12 @@
                 <li>Priority referrals through our business concierge team.</li>
                 <li>Two complimentary tickets to signature networking events.</li>
             </ul>
-            <button type="submit" class="modal-close" data-modal-close>Close</button>
-        </form>
+            <button type="button" class="modal-close" data-modal-close>Close</button>
+        </div>
     </dialog>
 
     <dialog id="gold-modal" class="membership-modal" aria-labelledby="gold-modal-title">
-        <form method="dialog">
+        <div role="document" class="modal-content">
             <h3 id="gold-modal-title">Gold Membership Benefits</h3>
             <ul>
                 <li>All Silver benefits plus quarterly strategic planning sessions.</li>
@@ -198,8 +198,8 @@
                 <li>Sponsored speaking opportunities at flagship chamber events.</li>
                 <li>Dedicated advocacy support for policy initiatives.</li>
             </ul>
-            <button type="submit" class="modal-close" data-modal-close>Close</button>
-        </form>
+            <button type="button" class="modal-close" data-modal-close>Close</button>
+        </div>
     </dialog>
 </body>
 </html>

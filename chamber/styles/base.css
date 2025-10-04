@@ -682,6 +682,11 @@ footer {
     width: min(92vw, 480px);
 }
 
+.modal-content {
+    display: grid;
+    gap: 1.5rem;
+}
+
 .membership-modal h3 {
     margin-top: 0;
     margin-bottom: 1rem;
