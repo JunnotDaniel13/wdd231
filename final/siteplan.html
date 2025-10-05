@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan | Urban Scooter Garage</title>
+    <meta name="description" content="Site plan document for the Urban Scooter Garage website project.">
+    <meta name="author" content="Jerenason Junnot Daniel">
+
+    <!-- Link to your specific CSS for this site plan document -->
+    <link rel="stylesheet" href="styles/plan.css"> 
+
+    <!-- Optional: Link to chosen fonts from Google Fonts if you use them -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <h1>Urban Scooter Garage Site Plan</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Site Name</h2>
+            <p><strong>Name:</strong> Urban Scooter Garage</p>
+            <p><strong>Reason for selection:</strong> This name directly reflects the site's focus on urban scooter culture, customization, and community. "Garage" implies a place for building, tinkering, and shared passion, which aligns with the content about custom builds and maintenance. It's memorable and conveys a sense of belonging for enthusiasts.</p>
+            <!-- Optional: Example domain if you had one in mind: <p><strong>Example Domain:</strong> urban-scooter-garage.com</p> -->
+        </section>
+
+        <section>
+            <h2>Site Purpose</h2>
+            <p>The "Urban Scooter Garage" website aims to be a comprehensive hub for scooter enthusiasts interested in customizing, maintaining, and connecting through shared riding experiences. It will provide detailed information on various parts and custom builds, offer practical DIY guides, suggest curated urban riding routes, and foster community engagement through event listings and a contact form.</p>
+        </section>
+
+        <section>
+            <h2>Scenarios</h2>
+            <ol>
+                <li>**Scenario 1:** "I want to upgrade my scooter's suspension for a smoother urban ride. What are some recommended parts and how difficult is the installation?"</li>
+                <li>**Scenario 2:** "I'm new to Antananarivo and looking for some fun, safe scooter routes to explore the city with other riders. Where can I find route maps and event information?"</li>
+                <li>**Scenario 3:** "I've completed a custom build and want to showcase it or get advice from other tinkerers. Is there a way to submit my build or connect with the community?"</li>
+                <li>**Scenario 4:** "How can I book a maintenance check or get help with a specific modification for my scooter?"</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Color Schema</h2>
+            <p>The palette leans into warm garage-inspired browns paired with a reliable blue accent, creating a friendly but technical feel throughout the experience.</p>
+            <ul class="color-palette">
+                <li>
+                    <span class="color-swatch" style="--swatch-color: #fff8e1;"></span>
+                    <div>
+                        <strong>Warm Base</strong> <code>#FFF8E1</code> &mdash; applied to page backgrounds to keep content bright and inviting.
+                    </div>
+                </li>
+                <li>
+                    <span class="color-swatch" style="--swatch-color: #4e342e;"></span>
+                    <div>
+                        <strong>Primary Text</strong> <code>#4E342E</code> &mdash; used for body copy and key labels for strong contrast against the light base.
+                    </div>
+                </li>
+                <li>
+                    <span class="color-swatch" style="--swatch-color: #5d4037;"></span>
+                    <div>
+                        <strong>Garage Panel</strong> <code>#5D4037</code> &mdash; anchors headers, cards, and darker sections to echo classic workshop materials.
+                    </div>
+                </li>
+                <li>
+                    <span class="color-swatch" style="--swatch-color: #795548;"></span>
+                    <div>
+                        <strong>Accent One</strong> <code>#795548</code> &mdash; highlights headings, buttons, and callouts with a rich mid-tone brown.
+                    </div>
+                </li>
+                <li>
+                    <span class="color-swatch" style="--swatch-color: #4285f4;"></span>
+                    <div>
+                        <strong>Accent Two</strong> <code>#4285F4</code> &mdash; provides contrast for interactive states, links, and key data points.
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Typography</h2>
+            <p>The typography balances readability with a modern, slightly technical feel, suitable for an urban-themed site.</p>
+            <ul>
+                <li style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.8em; margin-bottom: 5px;">
+                    **Headings (h1, h2, h3):** `Montserrat` (Bold) - Modern, strong, and impactful for titles.
+                </li>
+                <li style="font-family: 'Roboto', sans-serif; font-weight: 400; font-size: 1em; margin-bottom: 5px;">
+                    **Body Text (paragraphs, lists):** `Roboto` (Regular) - Highly readable, clean, and versatile for main content.
+                </li>
+                <li style="font-family: 'Roboto Mono', monospace; font-weight: 400; font-size: 0.9em; margin-bottom: 5px;">
+                    **Code/Technical elements:** `Roboto Mono` (Regular) - For any code snippets or technical specifications to maintain a distinct, fixed-width appearance. (You'll need to add this to your Google Fonts link if you use it.)
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Wireframes (Home Page: index.html)</h2>
+            <p>These wireframes outline the basic layout and content areas for the `index.html` page, shown in dedicated visuals for mobile and desktop views.</p>
+
+            <figure class="wireframe-figure">
+                <img src="images/wireframe-mobile.png" alt="Mobile wireframe showcasing stacked sections: header, hero call to action, featured build, quick links, news, and footer." loading="lazy">
+            </figure>
+
+            <figure class="wireframe-figure">
+                <img src="images/wireframe-desktop.png" alt="Desktop wireframe with horizontal navigation, hero banner, dual-column feature and event panels, spotlight strip, and footer." loading="lazy">
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="current-year"></span> Urban Scooter Garage. All rights reserved.</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+    <script>
+        // JavaScript to dynamically set the current year and last modified date
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        document.getElementById('last-modified').textContent = document.lastModified;
+    </script>
+</body>
+</html>
