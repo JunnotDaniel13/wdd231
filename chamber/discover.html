@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber Directory | Antananarivo Chamber of Commerce</title>
-    <meta name="description" content="Explore the directory of local businesses and members of the Antananarivo Chamber of Commerce.">
+    <title>Discover Antananarivo | Antananarivo Chamber of Commerce</title>
+    <meta name="description" content="Explore signature destinations, culture, and opportunities around Antananarivo with the chamber discover guide.">
     <meta name="author" content="Jerenason Junnot Daniel">
 
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
-    <meta property="og:title" content="Business Directory | Antananarivo Chamber of Commerce">
+    <meta property="og:title" content="Discover Antananarivo | Chamber Guide">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://junnotdaniel13.github.io/wdd231/chamber/images/og-image.png">
-    <meta property="og:url" content="https://junnotdaniel13.github.io/wdd231/chamber/directory.html">
-    <meta property="og:description" content="Find local businesses and members in the Antananarivo area. Support local!">
+    <meta property="og:url" content="https://junnotdaniel13.github.io/wdd231/chamber/discover.html">
+    <meta property="og:description" content="Plan your next visit with eight curated highlights from the Antananarivo Chamber of Commerce community.">
 
     <link rel="stylesheet" href="styles/normalize.css">
-    
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/discover.css">
     <link rel="stylesheet" href="styles/larger.css">
-    
-    <script src="scripts/directory.js" defer></script>
+
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,24 +38,27 @@
                 <button id="menuButton" class="menu-button">☰ Menu</button>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="directory.html" class="active">Directory</a></li>
-                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="discover.html" class="active">Discover</a></li>
                     <li><a href="join.html">Join</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main class="directory-main">
-        <section class="view-controls">
-            <h1>Antananarivo Chamber Directory</h1>
-            <div class="view-toggle">
-                <button id="grid-view" class="view-button active">🖼️ Grid</button>
-                <button id="list-view" class="view-button">📄 List</button>
-            </div>
+    <main class="discover-main">
+        <section class="discover-intro" aria-labelledby="discover-title">
+            <p class="intro-eyebrow">Explore Antananarivo</p>
+            <h1 id="discover-title">Discover Opportunities Around the Capital</h1>
+            <p>Antananarivo blends history, innovation, and natural beauty. Explore eight standout destinations and experiences that showcase the community your business will join.</p>
         </section>
 
-        <section id="member-display" class="grid"></section> 
+        <section class="discover-grid" id="discoverGrid">
+            <article id="visit-message" class="visit-message" aria-live="polite">
+                <h2>Welcome to the Discover Guide</h2>
+                <p id="visitMessageText">Loading your personalized greeting...</p>
+            </article>
+        </section>
     </main>
 
     <footer>

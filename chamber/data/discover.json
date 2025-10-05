@@ -1,0 +1,66 @@
+[
+  {
+    "id": "card1",
+    "name": "Analakely Market",
+    "address": "Avenue de l'Indépendance, Antananarivo",
+    "description": "Antananarivo's iconic open-air market, bustling with local artisans, produce, and street food that captures the city's daily rhythm.",
+    "image": "discover-analakely.webp",
+    "learnMore": "https://en.wikipedia.org/wiki/Analakely"
+  },
+  {
+    "id": "card2",
+    "name": "Rova of Antananarivo",
+    "address": "Ambohimanoro, Antananarivo",
+    "description": "The historic royal palace complex perched above the capital, offering panoramic views and insights into Malagasy monarchy.",
+    "image": "discover-rova.webp",
+    "learnMore": "https://en.wikipedia.org/wiki/Rova_of_Antananarivo"
+  },
+  {
+    "id": "card3",
+    "name": "Ambohimanga Sacred Hill",
+    "address": "Ambohimanga, Analamanga Region",
+    "description": "A UNESCO World Heritage site and spiritual heartland revered for its preserved royal city and lush forested slopes.",
+    "image": "discover-amba.webp",
+    "learnMore": "https://en.wikipedia.org/wiki/Ambohimanga"
+  },
+  {
+    "id": "card4",
+    "name": "Lemurs' Park",
+    "address": "PK 22, Route Nationale 1, Antananarivo",
+    "description": "A private reserve home to nine lemur species, showcasing Madagascar's biodiversity in a protected riverside habitat.",
+    "image": "discover-lemurs.webp",
+    "learnMore": "https://www.lemurspark.com/"
+  },
+  {
+    "id": "card5",
+    "name": "Avenue of the Baobabs",
+    "address": "Route Nationale 8, Menabe",
+    "description": "Majestic centuries-old baobab trees lining a red earth road, forming one of Madagascar's most photographed landscapes.",
+    "image": "discover-avenue.webp",
+    "learnMore": "https://en.wikipedia.org/wiki/Avenue_of_the_Baobabs"
+  },
+  {
+    "id": "card6",
+    "name": "La Digue Handicraft Market",
+    "address": "Route de l'Aéroport, Ivato",
+    "description": "A cooperative market where artisans sell carved wood, basketry, and jewelry, ideal for sourcing member gift collections.",
+    "image": "discover-handicrafts.webp",
+    "learnMore": "https://madagascar-tourisme.com/en/points-dinterets/la-digue-market/"
+  },
+  {
+    "id": "card7",
+    "name": "Piratenmuseum in Madagascar",
+    "address": "Petite Fleur 14, Antananarivo",
+    "description": "Interactive exhibits narrate the island's pirate lore, colonial trade, and maritime heritage in a family-friendly setting.",
+    "image": "discover-museum.webp",
+    "learnMore": "https://www.madamagazine.com/en/das-piratenmuseum-in-antananarivo/"
+  },
+  {
+    "id": "card8",
+    "name": "Madagascar Cuisine Studio",
+    "address": "Lalana Rabezavana, Antananarivo",
+    "description": "A cooperative kitchen offering cooking workshops and tasting menus celebrating contemporary takes on Malagasy staples.",
+    "image": "discover-cuisine.webp",
+    "learnMore": "https://madagascarcharm.com/"
+  }
+]
