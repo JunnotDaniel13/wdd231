@@ -86,7 +86,7 @@ const renderFeaturedBuild = (build) => {
 
   const cta = featuredTargets.container.querySelector(".cta");
   if (cta) {
-    cta.setAttribute("href", `builds.html#${build.id}`);
+    cta.setAttribute("href", `project-builds.html#${build.id}`);
   }
 };
 
