@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Custom Scooter Builds | Urban Scooter Garage</title>
+    <meta name="description" content="Discover detailed Urban Scooter Garage build recipes with timelines, part lists, and skill guidance.">
+    <meta name="author" content="Jerenason Junnot Daniel">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Custom Scooter Builds | Urban Scooter Garage">
+    <meta property="og:description" content="Discover detailed Urban Scooter Garage build recipes with timelines, part lists, and skill guidance.">
+    <meta property="og:url" content="https://junnotdaniel13.github.io/wdd231/final/builds.html">
+    <meta property="og:image" content="https://junnotdaniel13.github.io/wdd231/final/images/hero-garage.webp">
+    <meta property="og:image:alt" content="Mechanic fine-tuning an urban scooter inside the Urban Scooter Garage workshop">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Custom Scooter Builds | Urban Scooter Garage">
+    <meta name="twitter:description" content="Discover detailed build recipes, timelines, and part lists from the Urban Scooter Garage crew.">
+    <meta name="twitter:image" content="https://junnotdaniel13.github.io/wdd231/final/images/hero-garage.webp">
+    <link rel="icon" href="./images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/site.css">
+  </head>
+  <body>
+    <header>
+      <div class="top-bar">
+        <a class="brand" href="index.html">
+          <img
+            src="images/logo.webp"
+            alt="Urban Scooter Garage"
+            class="brand-logo"
+          />
+
+          <h1>Urban Scooter Garage</h1>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          data-nav-toggle
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span class="visually-hidden">Toggle navigation</span>
+          ☰
+        </button>
+      </div>
+      <nav id="primary-navigation" data-nav data-expanded="true" aria-label="Primary navigation">
+        <div class="navigation">
+          <a href="index.html" data-nav-link>Home</a>
+          <a href="builds.html" data-nav-link>Custom Builds</a>
+          <a href="routes.html" data-nav-link>Routes & Rideouts</a>
+          <a href="community.html" data-nav-link>Community</a>
+          <a href="contact.html" data-nav-link>Book the Garage</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="highlight-panel" aria-labelledby="builds-heading">
+        <div class="section-header" style="margin-bottom: 0.75rem;">
+          <h2 id="builds-heading">Custom build playbook</h2>
+          <span class="pill">Updated Wk 10</span>
+        </div>
+        <p>
+          Every build we document is a field-tested combination of upgrades, torque specs, and checklists assembled by the Urban Scooter Garage crew. Bring your base scooter, match a recipe to your skill level, and follow the timeline to finish with confidence.
+        </p>
+        <div class="form-row two" style="margin-top: 1.5rem;">
+          <label for="difficulty-filter">Filter by difficulty</label>
+          <select id="difficulty-filter" data-builds-filter>
+            <option value="all">All builds</option>
+            <option value="Beginner">Beginner friendly</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Advanced">Advanced</option>
+          </select>
+        </div>
+        <p class="announcement" data-builds-count>Loading build count…</p>
+      </section>
+
+      <section aria-label="Build recipes" style="margin-top: 2.5rem;">
+        <div class="card-grid" data-builds-list>
+          <article class="card">
+            <h3>Loading builds…</h3>
+            <p>Hang tight while we spin up the workshop data.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-grid">
+        <section aria-labelledby="footer-brand">
+          <h2 id="footer-brand">Urban Scooter Garage</h2>
+          <div class="footer-meta">
+            <span>Lot II H 45 Analakely, Antananarivo</span>
+            <span>+261 34 07 677 91 · hello@urbanscootergarage.mg</span>
+            <span>Workshop hours: Tue–Sat · 16:00–22:00</span>
+          </div>
+        </section>
+        <section aria-labelledby="footer-links">
+          <h2 id="footer-links">Quick links</h2>
+          <ul class="resource-grid">
+            <li class="resource-card">
+              <strong>Reserve a bay</strong>
+              <span>Lock a time slot with our mechanics.</span>
+              <a class="cta secondary" href="contact.html">Book now</a>
+            </li>
+            <li class="resource-card">
+              <strong>Submit your build</strong>
+              <span>Share specs to feature on the community wall.</span>
+              <a class="cta secondary" href="community.html#submit">Submit</a>
+            </li>
+            <li class="resource-card">
+              <strong>Ride archives</strong>
+              <span>Download GPX tracks from past rideouts.</span>
+              <a class="cta secondary" href="routes.html#archives">Browse</a>
+            </li>
+          </ul>
+        </section>
+        <section aria-labelledby="footer-social">
+          <h2 id="footer-social">Stay connected</h2>
+          <div class="social-links">
+            <a href="https://www.instagram.com/" aria-label="Instagram">
+              <span aria-hidden="true">📸</span>
+            </a>
+            <a href="https://www.youtube.com/" aria-label="YouTube">
+              <span aria-hidden="true">▶️</span>
+            </a>
+            <a href="https://discord.com/" aria-label="Discord">
+              <span aria-hidden="true">💬</span>
+            </a>
+          </div>
+          <p class="legal">
+            &copy; <span data-current-year></span> Urban Scooter Garage · Last updated <span data-last-modified></span>
+          </p>
+        </section>
+      </div>
+    </footer>
+
+    <script type="module" src="scripts/navigation.js"></script>
+    <script type="module" src="scripts/builds.js"></script>
+  </body>
+</html>

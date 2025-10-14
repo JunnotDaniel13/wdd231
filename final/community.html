@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Community Hub | Urban Scooter Garage</title>
+    <meta name="description" content="Join the Urban Scooter Garage community to share builds, attend workshops, and stay in the loop on rideouts.">
+    <meta name="author" content="Jerenason Junnot Daniel">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Community Hub | Urban Scooter Garage">
+    <meta property="og:description" content="Join the Urban Scooter Garage community to share builds, attend workshops, and stay in the loop on rideouts.">
+    <meta property="og:url" content="https://junnotdaniel13.github.io/wdd231/final/community.html">
+    <meta property="og:image" content="https://junnotdaniel13.github.io/wdd231/final/images/hero-garage.webp">
+    <meta property="og:image:alt" content="Mechanic fine-tuning an urban scooter inside the Urban Scooter Garage workshop">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Community Hub | Urban Scooter Garage">
+    <meta name="twitter:description" content="Connect with riders, share builds, and join workshops hosted by Urban Scooter Garage.">
+    <meta name="twitter:image" content="https://junnotdaniel13.github.io/wdd231/final/images/hero-garage.webp">
+    <link rel="icon" href="./images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/site.css">
+  </head>
+  <body>
+    <header>
+      <div class="top-bar">
+        <a class="brand" href="index.html">
+          <img
+            src="images/logo.webp"
+            alt="Urban Scooter Garage"
+            class="brand-logo"
+          />
+
+          <h1>Urban Scooter Garage</h1>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          data-nav-toggle
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span class="visually-hidden">Toggle navigation</span>
+          ☰
+        </button>
+      </div>
+      <nav id="primary-navigation" data-nav data-expanded="true" aria-label="Primary navigation">
+        <div class="navigation">
+          <a href="index.html" data-nav-link>Home</a>
+          <a href="builds.html" data-nav-link>Custom Builds</a>
+          <a href="routes.html" data-nav-link>Routes & Rideouts</a>
+          <a href="community.html" data-nav-link>Community</a>
+          <a href="contact.html" data-nav-link>Book the Garage</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="highlight-panel" aria-labelledby="community-heading">
+        <div class="section-header" style="margin-bottom: 0.75rem;">
+          <h2 id="community-heading">Community HQ</h2>
+          <span class="pill">Garage radio</span>
+        </div>
+        <p>
+          Whether you are swapping parts, scouting new city lines, or showcasing your latest build, the Urban Scooter Garage community keeps everyone synced. Jump into a channel below, register for an event, and share what you are building.
+        </p>
+        <div class="grid-two" style="margin-top: 1.5rem;">
+          <article class="card">
+            <h3>Discord</h3>
+            <p>Live channels for wrenching help, ride planning, and part drops.</p>
+            <a class="cta secondary" href="https://discord.com/" target="_blank" rel="noopener">Join the server</a>
+          </article>
+          <article class="card">
+            <h3>Telegram Alerts</h3>
+            <p>Battery weather warnings, last-minute ride changes, and limited slots.</p>
+            <a class="cta secondary" href="https://telegram.org/" target="_blank" rel="noopener">Subscribe</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="events" aria-labelledby="events-heading" style="margin-top: 3rem;">
+        <div class="section-header">
+          <h2 id="events-heading">Upcoming events & workshops</h2>
+          <span class="pill">Garage calendar</span>
+        </div>
+        <div class="card-grid" data-events-grid>
+          <article class="card">
+            <h3>Loading event calendar…</h3>
+          </article>
+        </div>
+      </section>
+
+      <section id="swap-meet" aria-labelledby="swap-heading" style="margin-top: 3rem;">
+        <div class="section-header">
+          <h2 id="swap-heading">Swap meet logistics</h2>
+          <span class="pill">Next: 1 Dec</span>
+        </div>
+        <div class="grid-two">
+          <article class="card">
+            <h3>Bring these</h3>
+            <ul class="meta-list">
+              <li>Labelled parts bins or zip bags</li>
+              <li>Print-out or QR to your build sheet</li>
+              <li>Any documentation for firmware upgrades</li>
+              <li>Optional: 3D printed samples to trade</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>What we provide</h3>
+            <ul class="meta-list">
+              <li>Work tables with power strips and soldering irons</li>
+              <li>Torque stations & calibration tools</li>
+              <li>Community photo booth to capture your build</li>
+              <li>Lunch + hydration station</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="submit" aria-labelledby="submit-heading" style="margin-top: 3rem;">
+        <div class="section-header">
+          <h2 id="submit-heading">Submit your build</h2>
+          <span class="pill">Feature ready</span>
+        </div>
+        <div class="grid-two">
+          <article class="card">
+            <h3>Submission checklist</h3>
+            <ul class="meta-list">
+              <li>High-resolution photos (front, deck, detail)</li>
+              <li>Upgrade list with brands and torque values</li>
+              <li>Battery stats, drivetrain, and controller firmware</li>
+              <li>One paragraph on what inspired the build</li>
+            </ul>
+            <p>
+              Approved submissions go live on our community wall every Friday. Bring your scooter to the next showcase night for studio lighting snaps.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Upload form</h3>
+            <form data-submit-form>
+              <div class="form-row two">
+                <label>
+                  Rider name
+                  <input type="text" name="name" required placeholder="Your full name">
+                </label>
+                <label>
+                  Contact channel
+                  <select name="contact" required>
+                    <option value="">Select one</option>
+                    <option value="email">Email</option>
+                    <option value="discord">Discord</option>
+                    <option value="telegram">Telegram</option>
+                  </select>
+                </label>
+              </div>
+              <label>
+                Build title
+                <input type="text" name="title" required placeholder="e.g. Analamanga Climber V2">
+              </label>
+              <label>
+                Build summary
+                <textarea name="summary" required placeholder="Tell us what makes this build special"></textarea>
+              </label>
+              <label>
+                Links (Google Drive, GitHub, etc.)
+                <input type="url" name="links" placeholder="https://">
+              </label>
+              <button class="cta submit" type="submit">Send build deck</button>
+              <p class="announcement" data-submit-status role="status" aria-live="polite">
+                No files are uploaded here. We send you a secure upload request after review.
+              </p>
+            </form>
+          </article>
+        </div>
+      </section>
+
+      <section id="archives" aria-labelledby="archives-heading" style="margin-top: 3rem;">
+        <div class="section-header">
+          <h2 id="archives-heading">Archive requests</h2>
+          <span class="pill">GPX & media</span>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>What you receive</h3>
+            <ul class="meta-list">
+              <li>GPX + FIT files recorded by our route scouts.</li>
+              <li>Photo set from the community photographer.</li>
+              <li>Pre-ride checklist and battery strategy notes.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>How to request</h3>
+            <p>Drop your Discord handle or email and the route name in the archive channel. We send a secure download link that expires after 48 hours.</p>
+            <a class="cta secondary" href="routes.html#archives">Browse ride history</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-grid">
+        <section aria-labelledby="footer-brand">
+          <h2 id="footer-brand">Urban Scooter Garage</h2>
+          <div class="footer-meta">
+            <span>Lot II H 45 Analakely, Antananarivo</span>
+            <span>+261 34 07 677 91 · hello@urbanscootergarage.mg</span>
+            <span>Workshop hours: Tue–Sat · 16:00–22:00</span>
+          </div>
+        </section>
+        <section aria-labelledby="footer-links">
+          <h2 id="footer-links">Quick links</h2>
+          <ul class="resource-grid">
+            <li class="resource-card">
+              <strong>Reserve a bay</strong>
+              <span>Lock a time slot with our mechanics.</span>
+              <a class="cta secondary" href="contact.html">Book now</a>
+            </li>
+            <li class="resource-card">
+              <strong>Submit your build</strong>
+              <span>Share specs to feature on the community wall.</span>
+              <a class="cta secondary" href="#submit">Submit</a>
+            </li>
+            <li class="resource-card">
+              <strong>Ride archives</strong>
+              <span>Download GPX tracks from past rideouts.</span>
+              <a class="cta secondary" href="routes.html#archives">Browse</a>
+            </li>
+          </ul>
+        </section>
+        <section aria-labelledby="footer-social">
+          <h2 id="footer-social">Stay connected</h2>
+          <div class="social-links">
+            <a href="https://www.instagram.com/" aria-label="Instagram">
+              <span aria-hidden="true">📸</span>
+            </a>
+            <a href="https://www.youtube.com/" aria-label="YouTube">
+              <span aria-hidden="true">▶️</span>
+            </a>
+            <a href="https://discord.com/" aria-label="Discord">
+              <span aria-hidden="true">💬</span>
+            </a>
+          </div>
+          <p class="legal">
+            &copy; <span data-current-year></span> Urban Scooter Garage · Last updated <span data-last-modified></span>
+          </p>
+        </section>
+      </div>
+    </footer>
+
+    <script type="module" src="scripts/navigation.js"></script>
+    <script type="module" src="scripts/community.js"></script>
+  </body>
+</html>

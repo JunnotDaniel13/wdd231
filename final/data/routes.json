@@ -1,0 +1,53 @@
+[
+  {
+    "id": "analamanga-hill-loop",
+    "name": "Analamanga Hill Loop",
+    "distanceKm": 18,
+    "elevationGainM": 320,
+    "surface": ["paved", "cobblestone"],
+    "difficulty": "Intermediate",
+    "meetup": "Saturdays — 07:30, Lac Anosy fountain",
+    "description": "Scenic sunrise climb circling the Queen's Palace ridge with sweeping city views. Expect crisp air, rolling hills, and tight switchbacks.",
+    "tips": [
+      "Run medium regen on descents to avoid brake fade.",
+      "Stop at Andohalo plaza for battery check and photos.",
+      "Cobblestone sections near the cathedral require 35 PSI tire pressure."
+    ],
+    "map": "https://www.openstreetmap.org/export/embed.html?bbox=47.5200%2C-18.9210%2C47.5335%2C-18.9040&layer=mapnik&marker=-18.9130%2C47.5250",
+    "mapLink": "https://www.openstreetmap.org/?mlat=-18.9130&mlon=47.5250#map=16/-18.9130/47.5250"
+  },
+  {
+    "id": "canal-greenway-sprint",
+    "name": "Canal Greenway Sprint",
+    "distanceKm": 12,
+    "elevationGainM": 90,
+    "surface": ["smooth pavement", "packed gravel"],
+    "difficulty": "Beginner",
+    "meetup": "Wednesdays — 18:00, Ankorondrano Skate Park",
+    "description": "Flat twilight ride hugging the northern canal. Ideal for newer riders who want to practice group formation and night lighting setups.",
+    "tips": [
+      "Bring reflective vest; sunset glare along the canal is strong.",
+      "We pause at Kilometer 6 to tune lighting animations.",
+      "Packed gravel section favours wider tires at 28-30 PSI."
+    ],
+    "map": "https://www.openstreetmap.org/export/embed.html?bbox=47.5205%2C-18.8795%2C47.5355%2C-18.8665&layer=mapnik&marker=-18.8730%2C47.5280",
+    "mapLink": "https://www.openstreetmap.org/?mlat=-18.8730&mlon=47.5280#map=15/-18.8730/47.5280"
+  },
+  {
+    "id": "lemur-trail-express",
+    "name": "Lemur Trail Express",
+    "distanceKm": 26,
+    "elevationGainM": 410,
+    "surface": ["dirt", "forest boardwalk"],
+    "difficulty": "Advanced",
+    "meetup": "Monthly — First Saturday 06:00, Ambatobe lookout",
+    "description": "Adventure ride into the wooded eastern ridge with tight tree runs and wildlife spotting. Bring spare belts, water, and light snacks.",
+    "tips": [
+      "Switch to hill mode before the first ascent at Km 4.",
+      "Boardwalk segments are slick pre-dawn; run eco throttle.",
+      "Carry bug spray and a compact toolkit for quick fixes."
+    ],
+    "map": "https://www.openstreetmap.org/export/embed.html?bbox=47.5580%2C-18.8970%2C47.5830%2C-18.8620&layer=mapnik&marker=-18.8790%2C47.5700",
+    "mapLink": "https://www.openstreetmap.org/?mlat=-18.8790&mlon=47.5700#map=14/-18.8790/47.5700"
+  }
+]

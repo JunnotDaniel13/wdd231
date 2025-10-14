@@ -1,0 +1,188 @@
+[
+  {
+    "id": "urban-commuter-pro",
+    "name": "Urban Commuter Pro",
+    "tagline": "Upgrade your daily ride with precision suspension and extra range.",
+    "difficulty": "Intermediate",
+    "buildTime": "6 hours",
+    "range": "45 km",
+    "topSpeed": "38 km/h",
+    "description": "A balanced commuter build focused on smoothing out cracked pavement and adding dependable range. Ideal for riders navigating the inner ring of Antananarivo.",
+    "highlights": [
+      "Dual air fork + coil rear suspension tuned for potholes",
+      "Deck extension with integrated modular battery mount",
+      "Smart controller with regenerative braking profiles"
+    ],
+    "parts": [
+      {
+        "name": "AeonFlex Adjustable Suspension Fork",
+        "category": "Ride Comfort",
+        "skillLevel": "Intermediate",
+        "notes": "Comes preloaded for 65-85 kg riders. Includes quick install spacers for most 10\" hub scooters."
+      },
+      {
+        "name": "VoltBridge 48V Smart Controller",
+        "category": "Performance",
+        "skillLevel": "Advanced",
+        "notes": "Unlocks regenerative braking tuning and three-stage throttle response. Flash the commuter preset after install."
+      },
+      {
+        "name": "UrbanDeck Modular Battery Kit",
+        "category": "Range",
+        "skillLevel": "Intermediate",
+        "notes": "Adds 12 km of range with quick release shield. Includes waterproof cabling harness."
+      }
+    ],
+    "timeline": [
+      {
+        "title": "Strip down & inspection",
+        "duration": "45 min",
+        "details": "Remove stem column, wheels, and deck plate. Photograph wiring layout for quick reassembly."
+      },
+      {
+        "title": "Suspension swap",
+        "duration": "1 hr 30 min",
+        "details": "Press in new head tube bearings and torque to 45 Nm. Align brake caliper before tightening the fork crown."
+      },
+      {
+        "title": "Controller + wiring",
+        "duration": "1 hr",
+        "details": "Mount smart controller, route sensor cables along stem channel, secure with heat-resistant wraps."
+      },
+      {
+        "title": "Battery + deck mods",
+        "duration": "2 hr",
+        "details": "Install modular deck plate, test battery quick release, and confirm connector polarity."
+      },
+      {
+        "title": "Road test & tuning",
+        "duration": "45 min",
+        "details": "Calibrate regenerative braking on sloped street, retighten stem bolts, document final settings."
+      }
+    ]
+  },
+  {
+    "id": "weekend-trail-scrambler",
+    "name": "Weekend Trail Scrambler",
+    "tagline": "Grip, torque, and lighting for dusty switchbacks just outside the city.",
+    "difficulty": "Advanced",
+    "buildTime": "9 hours",
+    "range": "55 km",
+    "topSpeed": "42 km/h",
+    "description": "Designed for mixed dirt and cobblestone trails north of Analamanga. Reinforced components handle bumps while keeping the ride agile.",
+    "highlights": [
+      "11\" knobby tires with reinforced rim kit",
+      "Torque-heavy dual hub motors with hill mode preset",
+      "Full perimeter lighting and visibility harness"
+    ],
+    "parts": [
+      {
+        "name": "TerrainClaw 11\" Tire & Rim Kit",
+        "category": "Traction",
+        "skillLevel": "Advanced",
+        "notes": "Requires truing stand for rim alignment. Swap front and rear simultaneously for best results."
+      },
+      {
+        "name": "DualDrive 52V Hub Motors",
+        "category": "Power",
+        "skillLevel": "Advanced",
+        "notes": "Flash hill mode profile before locking case. Add extra heat paste on stator for longer climbs."
+      },
+      {
+        "name": "LumenArc 360 Lighting Harness",
+        "category": "Safety",
+        "skillLevel": "Intermediate",
+        "notes": "Includes brake-linked amber strips and under-deck glow. Route harness inside deck channel."
+      }
+    ],
+    "timeline": [
+      {
+        "title": "Wheel prep",
+        "duration": "1 hr 20 min",
+        "details": "Mount tires, balance using bead weights, and check for wobble under spin test."
+      },
+      {
+        "title": "Motor install",
+        "duration": "2 hr 15 min",
+        "details": "Swap axles, solder new phase wires, and update firmware with hill mode preset."
+      },
+      {
+        "title": "Deck reinforcement",
+        "duration": "1 hr 40 min",
+        "details": "Attach skid plate, install rubber dampers under deck, and seal edges against dust."
+      },
+      {
+        "title": "Lighting & harness routing",
+        "duration": "1 hr 10 min",
+        "details": "Secure harness with adhesive clips, test trigger brake lights, and set up running light animation."
+      },
+      {
+        "title": "Trail safety inspection",
+        "duration": "45 min",
+        "details": "Torque check, brake bedding, and quick ride on mixed surface to verify traction."
+      }
+    ]
+  },
+  {
+    "id": "studio-showcase-mini",
+    "name": "Studio Showcase Mini",
+    "tagline": "Compact build focused on aesthetics and modular accessories for meetups.",
+    "difficulty": "Beginner",
+    "buildTime": "4 hours",
+    "range": "32 km",
+    "topSpeed": "28 km/h",
+    "description": "A lighter build intended for riders who want to stand out at community meetups. Quick to assemble with modular add-ons.",
+    "highlights": [
+      "Powder-coated panels with interchangeable side guards",
+      "Deck-integrated Bluetooth speaker mount",
+      "Quick swap handlebar system with 3 presets"
+    ],
+    "parts": [
+      {
+        "name": "ColorShift Side Guard Kit",
+        "category": "Style",
+        "skillLevel": "Beginner",
+        "notes": "Includes 3 panel sets. Use included vinyl squeegee to remove air pockets."
+      },
+      {
+        "name": "PulseDeck Audio Mount",
+        "category": "Accessories",
+        "skillLevel": "Beginner",
+        "notes": "Fits most mini Bluetooth speakers. Secure with vibration dampers before wiring."
+      },
+      {
+        "name": "QuickBar Modular Stem",
+        "category": "Control",
+        "skillLevel": "Intermediate",
+        "notes": "Choose between cafe, tracker, and upright presets. Requires torque wrench for stem cap."
+      }
+    ],
+    "timeline": [
+      {
+        "title": "Surface prep",
+        "duration": "30 min",
+        "details": "Clean panels, remove old decals, and lightly sand for powder coat adhesion."
+      },
+      {
+        "title": "Panel swap",
+        "duration": "1 hr",
+        "details": "Install new side guards, secure with rivet nuts, and level the deck plates."
+      },
+      {
+        "title": "Deck accessories",
+        "duration": "1 hr 15 min",
+        "details": "Mount audio cradle, run power lead to accessory port, and test Bluetooth range."
+      },
+      {
+        "title": "Handlebar presets",
+        "duration": "45 min",
+        "details": "Install QuickBar system, test each riding position, and torque to spec."
+      },
+      {
+        "title": "Showcase checklist",
+        "duration": "30 min",
+        "details": "Polish finishes, verify lighting, and snap photos for community submission."
+      }
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "garage-open-night",
+    "title": "Garage Open Night: Suspension Lab",
+    "date": "2024-11-08",
+    "time": "19:00",
+    "location": "Workshop Bay 2, Analakely",
+    "summary": "Hands-on suspension workshop led by Rado. Bring your own scooter or use the demo rigs.",
+    "status": "registration-open",
+    "link": "#contact"
+  },
+  {
+    "id": "urban-rideout",
+    "title": "Urban Rideout + Photo Session",
+    "date": "2024-11-16",
+    "time": "16:30",
+    "location": "Maison de la Culture, Antaninarenina",
+    "summary": "Community showcase ride weaving through heritage streets with golden-hour photography support.",
+    "status": "spots-limited",
+    "link": "routes.html#analamanga-hill-loop"
+  },
+  {
+    "id": "community-meet",
+    "title": "Community Build Swap Meet",
+    "date": "2024-12-01",
+    "time": "10:00",
+    "location": "Urban Scooter Garage HQ",
+    "summary": "Swap parts, pitch your project, and sign up for winter storage plans. Lunch provided.",
+    "status": "waitlist",
+    "link": "community.html#swap-meet"
+  }
+]

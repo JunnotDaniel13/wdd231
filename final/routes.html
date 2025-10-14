@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Urban Scooter Routes & Rideouts | Urban Scooter Garage</title>
+    <meta name="description" content="Plan your next scooter ride with curated Antananarivo routes, meetup details, and downloadable GPX archives from the Urban Scooter Garage.">
+    <meta name="author" content="Jerenason Junnot Daniel">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Urban Scooter Routes & Rideouts | Urban Scooter Garage">
+    <meta property="og:description" content="Plan your next scooter ride with curated Antananarivo routes, meetup details, and downloadable GPX archives from the Urban Scooter Garage.">
+    <meta property="og:url" content="https://junnotdaniel13.github.io/wdd231/final/routes.html">
+    <meta property="og:image" content="https://junnotdaniel13.github.io/wdd231/final/images/hero-garage.webp">
+    <meta property="og:image:alt" content="Mechanic fine-tuning an urban scooter inside the Urban Scooter Garage workshop">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Urban Scooter Routes & Rideouts | Urban Scooter Garage">
+    <meta name="twitter:description" content="Explore curated urban scooter routes, meetup details, and GPX archives from Urban Scooter Garage.">
+    <meta name="twitter:image" content="https://junnotdaniel13.github.io/wdd231/final/images/hero-garage.webp">
+    <link rel="icon" href="./images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/site.css">
+  </head>
+  <body>
+    <header>
+      <div class="top-bar">
+        <a class="brand" href="index.html">
+          <img
+            src="images/logo.webp"
+            alt="Urban Scooter Garage"
+            class="brand-logo"
+          />
+
+          <h1>Urban Scooter Garage</h1>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          data-nav-toggle
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span class="visually-hidden">Toggle navigation</span>
+          ☰
+        </button>
+      </div>
+      <nav id="primary-navigation" data-nav data-expanded="true" aria-label="Primary navigation">
+        <div class="navigation">
+          <a href="index.html" data-nav-link>Home</a>
+          <a href="builds.html" data-nav-link>Custom Builds</a>
+          <a href="routes.html" data-nav-link>Routes & Rideouts</a>
+          <a href="community.html" data-nav-link>Community</a>
+          <a href="contact.html" data-nav-link>Book the Garage</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="highlight-panel" aria-labelledby="routes-heading">
+        <div class="section-header" style="margin-bottom: 0.75rem;">
+          <h2 id="routes-heading">Guided ride library</h2>
+          <span class="pill">Updated weekly</span>
+        </div>
+        <p>
+          Our route scouts document every climb, recharge stop, and meetup location so your crew can focus on the ride. Choose a loop that matches your battery range and send us your adjustments after you roll.
+        </p>
+        <div class="form-row two" style="margin-top: 1.5rem;">
+          <label for="terrain-filter">Filter by terrain</label>
+          <select id="terrain-filter" data-routes-filter>
+            <option value="all">All terrains</option>
+            <option value="paved">Smooth pavement</option>
+            <option value="cobblestone">Cobblestone</option>
+            <option value="packed gravel">Packed gravel</option>
+            <option value="dirt">Dirt</option>
+            <option value="forest boardwalk">Forest boardwalk</option>
+          </select>
+        </div>
+        <p class="announcement" data-routes-count>Loading route overview…</p>
+      </section>
+
+      <section aria-label="Curated routes" style="margin-top: 2.5rem;">
+        <div class="routes" data-routes-list>
+          <article class="card">
+            <h3>Loading route map…</h3>
+            <p>We are fetching the latest rideout data.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="archives" aria-labelledby="archives-heading" style="margin-top: 3rem;">
+        <div class="section-header">
+          <h2 id="archives-heading">Rideout archives</h2>
+          <span class="pill">GPX downloads</span>
+        </div>
+        <div class="card-grid" data-archives-list>
+          <article class="card">
+            <h3>Loading archive snapshots…</h3>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-grid">
+        <section aria-labelledby="footer-brand">
+          <h2 id="footer-brand">Urban Scooter Garage</h2>
+          <div class="footer-meta">
+            <span>Lot II H 45 Analakely, Antananarivo</span>
+            <span>+261 34 07 677 91 · hello@urbanscootergarage.mg</span>
+            <span>Workshop hours: Tue–Sat · 16:00–22:00</span>
+          </div>
+        </section>
+        <section aria-labelledby="footer-links">
+          <h2 id="footer-links">Quick links</h2>
+          <ul class="resource-grid">
+            <li class="resource-card">
+              <strong>Reserve a bay</strong>
+              <span>Lock a time slot with our mechanics.</span>
+              <a class="cta secondary" href="contact.html">Book now</a>
+            </li>
+            <li class="resource-card">
+              <strong>Submit your build</strong>
+              <span>Share specs to feature on the community wall.</span>
+              <a class="cta secondary" href="community.html#submit">Submit</a>
+            </li>
+            <li class="resource-card">
+              <strong>Ride archives</strong>
+              <span>Download GPX tracks from past rideouts.</span>
+              <a class="cta secondary" href="#archives">Browse</a>
+            </li>
+          </ul>
+        </section>
+        <section aria-labelledby="footer-social">
+          <h2 id="footer-social">Stay connected</h2>
+          <div class="social-links">
+            <a href="https://www.instagram.com/" aria-label="Instagram">
+              <span aria-hidden="true">📸</span>
+            </a>
+            <a href="https://www.youtube.com/" aria-label="YouTube">
+              <span aria-hidden="true">▶️</span>
+            </a>
+            <a href="https://discord.com/" aria-label="Discord">
+              <span aria-hidden="true">💬</span>
+            </a>
+          </div>
+          <p class="legal">
+            &copy; <span data-current-year></span> Urban Scooter Garage · Last updated <span data-last-modified></span>
+          </p>
+        </section>
+      </div>
+    </footer>
+
+    <script type="module" src="scripts/navigation.js"></script>
+    <script type="module" src="scripts/routes.js"></script>
+  </body>
+</html>

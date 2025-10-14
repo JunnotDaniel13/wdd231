@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Book the Garage | Urban Scooter Garage</title>
+    <meta name="description" content="Reserve a maintenance bay, request modification support, or contact the Urban Scooter Garage team in Antananarivo.">
+    <meta name="author" content="Jerenason Junnot Daniel">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Book the Garage | Urban Scooter Garage">
+    <meta property="og:description" content="Reserve a maintenance bay, request modification support, or contact the Urban Scooter Garage team in Antananarivo.">
+    <meta property="og:url" content="https://junnotdaniel13.github.io/wdd231/final/contact.html">
+    <meta property="og:image" content="https://junnotdaniel13.github.io/wdd231/final/images/hero-garage.webp">
+    <meta property="og:image:alt" content="Mechanic fine-tuning an urban scooter inside the Urban Scooter Garage workshop">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Book the Garage | Urban Scooter Garage">
+    <meta name="twitter:description" content="Reserve a maintenance bay, request modification support, or contact the Urban Scooter Garage team in Antananarivo.">
+    <meta name="twitter:image" content="https://junnotdaniel13.github.io/wdd231/final/images/hero-garage.webp">
+    <link rel="icon" href="./images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/site.css">
+  </head>
+  <body>
+    <header>
+      <div class="top-bar">
+        <a class="brand" href="index.html">
+          <img
+            src="images/logo.webp"
+            alt="Urban Scooter Garage"
+            class="brand-logo"
+          />
+
+          <h1>Urban Scooter Garage</h1>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          data-nav-toggle
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span class="visually-hidden">Toggle navigation</span>
+          ☰
+        </button>
+      </div>
+      <nav id="primary-navigation" data-nav data-expanded="true" aria-label="Primary navigation">
+        <div class="navigation">
+          <a href="index.html" data-nav-link>Home</a>
+          <a href="builds.html" data-nav-link>Custom Builds</a>
+          <a href="routes.html" data-nav-link>Routes & Rideouts</a>
+          <a href="community.html" data-nav-link>Community</a>
+          <a href="contact.html" data-nav-link>Book the Garage</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="highlight-panel" aria-labelledby="contact-heading">
+        <div class="section-header" style="margin-bottom: 0.75rem;">
+          <h2 id="contact-heading">Reserve a maintenance bay</h2>
+          <span class="pill">Responds within 2 hrs</span>
+        </div>
+        <p>
+          Need a suspension tune, controller flash, or safety inspection before a big ride? Send the crew your details and we will confirm the best time slot and prep the right tools before you arrive.
+        </p>
+      </section>
+
+      <section aria-labelledby="booking-heading" style="margin-top: 2.5rem;">
+        <div class="grid-two">
+          <article class="card">
+            <h3 id="booking-heading">Booking request</h3>
+            <form data-booking-form>
+              <div class="form-row two">
+                <label>
+                  Rider name
+                  <input type="text" name="name" required placeholder="Full name">
+                </label>
+                <label>
+                  Email
+                  <input type="email" name="email" required placeholder="you@example.com">
+                </label>
+              </div>
+              <div class="form-row two">
+                <label>
+                  Preferred date
+                  <input type="date" name="date" required>
+                </label>
+                <label>
+                  Preferred time slot
+                  <select name="slot" required>
+                    <option value="">Select slot</option>
+                    <option value="16:00">16:00 – 18:00</option>
+                    <option value="18:30">18:30 – 20:30</option>
+                    <option value="20:30">20:30 – 22:00</option>
+                  </select>
+                </label>
+              </div>
+              <fieldset class="card" style="background: rgba(93, 64, 55, 0.04);">
+                <legend>Service focus</legend>
+                <label class="field">
+                  <input type="checkbox" name="services" value="Suspension" />
+                  <span>Suspension tune</span>
+                </label>
+                <label class="field">
+                  <input type="checkbox" name="services" value="Controller" />
+                  <span>Controller / firmware flash</span>
+                </label>
+                <label class="field">
+                  <input type="checkbox" name="services" value="Brakes" />
+                  <span>Brake service & bleed</span>
+                </label>
+                <label class="field">
+                  <input type="checkbox" name="services" value="Lighting" />
+                  <span>Lighting & wiring</span>
+                </label>
+              </fieldset>
+              <label>
+                Tell us more
+                <textarea name="notes" placeholder="Share symptoms, parts you are bringing, or the modification you are planning." required></textarea>
+              </label>
+              <button class="cta submit" type="submit">Request slot</button>
+              <p class="announcement" data-booking-status role="status" aria-live="polite">
+                Our crew replies Monday through Saturday between 10:00 and 22:00.
+              </p>
+            </form>
+          </article>
+          <article class="card">
+            <h3>Garage contact</h3>
+            <ul class="meta-list">
+              <li><strong>Phone</strong> +261 34 07 677 91</li>
+              <li><strong>Email</strong> hello@urbanscootergarage.mg</li>
+              <li><strong>WhatsApp</strong> +261 34 07 677 91</li>
+              <li><strong>Telegram</strong> @USGcrew</li>
+            </ul>
+            <h3>Checklist before arrival</h3>
+            <ul class="meta-list">
+              <li>Charge your scooter to at least 60%.</li>
+              <li>Bring torque keys if you use custom bolts.</li>
+              <li>Label any aftermarket electronics you bring.</li>
+              <li>Wear closed shoes; helmets are available on site.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="location-heading" style="margin-top: 3rem;">
+        <div class="section-header">
+          <h2 id="location-heading">Find the garage</h2>
+          <span class="pill">Analakely</span>
+        </div>
+        <div class="grid-two">
+          <article class="card">
+            <h3>Workshop location</h3>
+            <p>Lot II H 45 Analakely, just behind the artisan market. Look for the mural garage door with blue stripes.</p>
+            <ul class="meta-list">
+              <li><strong>Access</strong> Secure parking for scooters and bikes.</li>
+              <li><strong>Transit</strong> 10 min walk from Anosy tram stop.</li>
+              <li><strong>Drop-off</strong> Loading zone open after 16:00.</li>
+            </ul>
+            <p>
+              Arrive 10 minutes before your slot so we can walk through the inspection checklist with you.
+            </p>
+          </article>
+          <div class="map-frame">
+            <iframe
+              src="https://www.openstreetmap.org/export/embed.html?bbox=47.5245%2C-18.9165%2C47.5335%2C-18.9075&layer=mapnik&marker=-18.9128%2C47.5288"
+              loading="lazy"
+              title="Urban Scooter Garage location map"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <p class="map-credit">
+            Map data ©
+            <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener"
+              >OpenStreetMap contributors</a
+            >
+            ·
+            <a
+              href="https://www.openstreetmap.org/?mlat=-18.9128&mlon=47.5288#map=16/-18.9128/47.5288"
+              target="_blank"
+              rel="noopener"
+              >View larger map</a
+            >
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-grid">
+        <section aria-labelledby="footer-brand">
+          <h2 id="footer-brand">Urban Scooter Garage</h2>
+          <div class="footer-meta">
+            <span>Lot II H 45 Analakely, Antananarivo</span>
+            <span>+261 34 07 677 91 · hello@urbanscootergarage.mg</span>
+            <span>Workshop hours: Tue–Sat · 16:00–22:00</span>
+          </div>
+        </section>
+        <section aria-labelledby="footer-links">
+          <h2 id="footer-links">Quick links</h2>
+          <ul class="resource-grid">
+            <li class="resource-card">
+              <strong>Reserve a bay</strong>
+              <span>Lock a time slot with our mechanics.</span>
+              <a class="cta secondary" href="#booking-heading">Book now</a>
+            </li>
+            <li class="resource-card">
+              <strong>Submit your build</strong>
+              <span>Share specs to feature on the community wall.</span>
+              <a class="cta secondary" href="community.html#submit">Submit</a>
+            </li>
+            <li class="resource-card">
+              <strong>Ride archives</strong>
+              <span>Download GPX tracks from past rideouts.</span>
+              <a class="cta secondary" href="routes.html#archives">Browse</a>
+            </li>
+          </ul>
+        </section>
+        <section aria-labelledby="footer-social">
+          <h2 id="footer-social">Stay connected</h2>
+          <div class="social-links">
+            <a href="https://www.instagram.com/" aria-label="Instagram">
+              <span aria-hidden="true">📸</span>
+            </a>
+            <a href="https://www.youtube.com/" aria-label="YouTube">
+              <span aria-hidden="true">▶️</span>
+            </a>
+            <a href="https://discord.com/" aria-label="Discord">
+              <span aria-hidden="true">💬</span>
+            </a>
+          </div>
+          <p class="legal">
+            &copy; <span data-current-year></span> Urban Scooter Garage · Last updated <span data-last-modified></span>
+          </p>
+        </section>
+      </div>
+    </footer>
+
+    <script type="module" src="scripts/navigation.js"></script>
+    <script type="module" src="scripts/contact.js"></script>
+  </body>
+</html>
