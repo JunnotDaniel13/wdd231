@@ -30,11 +30,14 @@
         <a class="brand" href="index.html">
           <img
             src="images/logo.webp"
-            alt="Urban Scooter Garage"
+            alt="Urban Scooter Garage logo"
             class="brand-logo"
-          />
-
-          <h1>Urban Scooter Garage</h1>
+            width="48"
+            height="48"
+            loading="lazy"
+            decoding="async"
+          >
+          <span class="brand-title">Urban Scooter Garage</span>
         </a>
         <button
           class="nav-toggle"
@@ -52,22 +55,21 @@
           <a href="index.html" data-nav-link>Home</a>
           <a href="builds.html" data-nav-link>Custom Builds</a>
           <a href="routes.html" data-nav-link>Routes & Rideouts</a>
-          <a href="community.html" data-nav-link>Community</a>
-          <a href="contact.html" data-nav-link>Book the Garage</a>
         </div>
       </nav>
     </header>
 
     <main>
+      <h1 class="page-title">Custom Scooter Builds</h1>
       <section class="highlight-panel" aria-labelledby="builds-heading">
-        <div class="section-header" style="margin-bottom: 0.75rem;">
+        <div class="section-header header-compact">
           <h2 id="builds-heading">Custom build playbook</h2>
-          <span class="pill">Updated Wk 10</span>
+          <span class="tag" data-tag="pill">Updated Wk 10</span>
         </div>
         <p>
           Every build we document is a field-tested combination of upgrades, torque specs, and checklists assembled by the Urban Scooter Garage crew. Bring your base scooter, match a recipe to your skill level, and follow the timeline to finish with confidence.
         </p>
-        <div class="form-row two" style="margin-top: 1.5rem;">
+        <div class="form-row two section-gap-sm">
           <label for="difficulty-filter">Filter by difficulty</label>
           <select id="difficulty-filter" data-builds-filter>
             <option value="all">All builds</option>
@@ -79,7 +81,7 @@
         <p class="announcement" data-builds-count>Loading build count…</p>
       </section>
 
-      <section aria-label="Build recipes" style="margin-top: 2.5rem;">
+      <section aria-label="Build recipes" class="section-gap-md">
         <div class="card-grid" data-builds-list>
           <article class="card">
             <h3>Loading builds…</h3>
@@ -105,12 +107,12 @@
             <li class="resource-card">
               <strong>Reserve a bay</strong>
               <span>Lock a time slot with our mechanics.</span>
-              <a class="cta secondary" href="contact.html">Book now</a>
+              <a class="cta secondary" href="index.html#contact">Book now</a>
             </li>
             <li class="resource-card">
               <strong>Submit your build</strong>
               <span>Share specs to feature on the community wall.</span>
-              <a class="cta secondary" href="community.html#submit">Submit</a>
+              <a class="cta secondary" href="#builds-heading">Submit</a>
             </li>
             <li class="resource-card">
               <strong>Ride archives</strong>

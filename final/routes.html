@@ -30,11 +30,14 @@
         <a class="brand" href="index.html">
           <img
             src="images/logo.webp"
-            alt="Urban Scooter Garage"
+            alt="Urban Scooter Garage logo"
             class="brand-logo"
-          />
-
-          <h1>Urban Scooter Garage</h1>
+            width="48"
+            height="48"
+            loading="lazy"
+            decoding="async"
+          >
+          <span class="brand-title">Urban Scooter Garage</span>
         </a>
         <button
           class="nav-toggle"
@@ -52,22 +55,21 @@
           <a href="index.html" data-nav-link>Home</a>
           <a href="builds.html" data-nav-link>Custom Builds</a>
           <a href="routes.html" data-nav-link>Routes & Rideouts</a>
-          <a href="community.html" data-nav-link>Community</a>
-          <a href="contact.html" data-nav-link>Book the Garage</a>
         </div>
       </nav>
     </header>
 
     <main>
+      <h1 class="page-title">Routes & Rideouts</h1>
       <section class="highlight-panel" aria-labelledby="routes-heading">
-        <div class="section-header" style="margin-bottom: 0.75rem;">
+        <div class="section-header header-compact">
           <h2 id="routes-heading">Guided ride library</h2>
-          <span class="pill">Updated weekly</span>
+          <span class="tag" data-tag="pill">Updated weekly</span>
         </div>
         <p>
           Our route scouts document every climb, recharge stop, and meetup location so your crew can focus on the ride. Choose a loop that matches your battery range and send us your adjustments after you roll.
         </p>
-        <div class="form-row two" style="margin-top: 1.5rem;">
+        <div class="form-row two section-gap-sm">
           <label for="terrain-filter">Filter by terrain</label>
           <select id="terrain-filter" data-routes-filter>
             <option value="all">All terrains</option>
@@ -81,7 +83,7 @@
         <p class="announcement" data-routes-count>Loading route overview…</p>
       </section>
 
-      <section aria-label="Curated routes" style="margin-top: 2.5rem;">
+      <section aria-label="Curated routes" class="section-gap-md">
         <div class="routes" data-routes-list>
           <article class="card">
             <h3>Loading route map…</h3>
@@ -90,10 +92,10 @@
         </div>
       </section>
 
-      <section id="archives" aria-labelledby="archives-heading" style="margin-top: 3rem;">
+      <section id="archives" aria-labelledby="archives-heading" class="section-gap-lg">
         <div class="section-header">
           <h2 id="archives-heading">Rideout archives</h2>
-          <span class="pill">GPX downloads</span>
+          <span class="tag" data-tag="pill">GPX downloads</span>
         </div>
         <div class="card-grid" data-archives-list>
           <article class="card">
@@ -119,12 +121,12 @@
             <li class="resource-card">
               <strong>Reserve a bay</strong>
               <span>Lock a time slot with our mechanics.</span>
-              <a class="cta secondary" href="contact.html">Book now</a>
+              <a class="cta secondary" href="index.html#contact">Book now</a>
             </li>
             <li class="resource-card">
               <strong>Submit your build</strong>
               <span>Share specs to feature on the community wall.</span>
-              <a class="cta secondary" href="community.html#submit">Submit</a>
+              <a class="cta secondary" href="builds.html">Submit</a>
             </li>
             <li class="resource-card">
               <strong>Ride archives</strong>

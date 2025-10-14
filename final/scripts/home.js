@@ -117,7 +117,11 @@ const renderEvents = (events) => {
     summary.textContent = event.summary;
 
     const status = document.createElement("span");
-    status.className = `status-tag ${event.status === "registration-open" ? "live" : ""}`;
+    status.className = "tag";
+    status.dataset.tag = "status";
+    if (event.status === "registration-open") {
+      status.dataset.state = "live";
+    }
     status.textContent = getStatusLabel(event.status);
 
     item.append(title, status, timeRow, location, summary);
@@ -149,7 +153,6 @@ const initHome = async () => {
     if (eventsList) {
       eventsList.innerHTML = `<li class="event-card"><strong>We're updating the calendar.</strong><span>${error.message}</span></li>`;
     }
-    console.error(error);
   }
 };
 

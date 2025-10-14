@@ -81,8 +81,9 @@ const renderBuildCard = (build) => {
   const header = createElement("div", { className: "section-header" });
   const title = createElement("h3", { text: build.name });
   const diffTag = createElement("span", {
-    className: "status-tag",
-    text: build.difficulty
+    className: "tag",
+    text: build.difficulty,
+    attrs: { "data-tag": "status" }
   });
 
   header.append(title, diffTag);
@@ -173,7 +174,6 @@ const initBuilds = async () => {
     if (buildsContainer) {
       buildsContainer.innerHTML = `<article class="card"><h3>We could not load builds.</h3><p>${error.message}</p></article>`;
     }
-    console.error(error);
   }
 };
 

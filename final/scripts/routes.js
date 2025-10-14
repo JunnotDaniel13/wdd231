@@ -39,8 +39,9 @@ const createRouteCard = (route) => {
   const header = createElement("div", { className: "section-header" });
   const title = createElement("h3", { text: route.name });
   const badge = createElement("span", {
-    className: "status-tag live",
-    text: route.difficulty
+    className: "tag",
+    text: route.difficulty,
+    attrs: { "data-tag": "status", "data-state": "live" }
   });
   header.append(title, badge);
 
@@ -95,7 +96,7 @@ const createRouteCard = (route) => {
   const cta = createElement("a", {
     className: "cta",
     text: "Join next ride",
-    attrs: { href: `community.html#events` }
+    attrs: { href: `index.html#contact` }
   });
 
   article.append(header, description, meta, tips, mapWrapper, mapCredit, cta);
@@ -164,7 +165,7 @@ const renderArchives = (routes) => {
     const link = createElement("a", {
       className: "cta secondary",
       text: "Request files",
-      attrs: { href: "community.html#archives" }
+      attrs: { href: "index.html#contact" }
     });
 
     card.append(title, stats, riders, notes, link);
@@ -184,7 +185,6 @@ const initRoutes = async () => {
     if (routesCount) {
       routesCount.textContent = "Route data temporarily unavailable.";
     }
-    console.error(error);
   }
 };
 

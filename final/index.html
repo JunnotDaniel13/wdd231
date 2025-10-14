@@ -30,11 +30,14 @@
         <a class="brand" href="index.html">
           <img
             src="images/logo.webp"
-            alt="Urban Scooter Garage"
+            alt="Urban Scooter Garage logo"
             class="brand-logo"
-          />
-
-          <h1>Urban Scooter Garage</h1>
+            width="48"
+            height="48"
+            loading="lazy"
+            decoding="async"
+          >
+          <span class="brand-title">Urban Scooter Garage</span>
         </a>
         <button
           class="nav-toggle"
@@ -52,27 +55,26 @@
           <a href="index.html" data-nav-link>Home</a>
           <a href="builds.html" data-nav-link>Custom Builds</a>
           <a href="routes.html" data-nav-link>Routes & Rideouts</a>
-          <a href="community.html" data-nav-link>Community</a>
-          <a href="contact.html" data-nav-link>Book the Garage</a>
         </div>
       </nav>
     </header>
 
     <main>
+      <h1 class="page-title visually-hidden">Urban Scooter Garage</h1>
       <section class="hero" aria-labelledby="hero-heading">
         <div class="hero-content">
-          <p class="badge">Antananarivo's scooter lab</p>
+          <p class="tag" data-tag="badge">Antananarivo's scooter lab</p>
           <h2 id="hero-heading">Build smarter. Ride farther. Meet your crew.</h2>
           <p>
             From precision suspension swaps to curated rideouts, the Urban Scooter Garage is your hub for tuning, testing, and connecting with riders across the city.
           </p>
-          <div class="ctas">
-            <a class="cta" href="contact.html">Book a maintenance bay</a>
+          <div>
+            <a class="cta" href="#contact">Book a maintenance bay</a>
             <a class="cta secondary" href="builds.html">Browse build recipes</a>
           </div>
         </div>
         <aside aria-label="Garage stats">
-          <span class="badge">This season</span>
+          <span class="tag" data-tag="badge">This season</span>
           <div class="build-stats">
             <div class="stat">
               <strong data-stat-builds>24</strong>
@@ -94,7 +96,7 @@
         <div class="card">
           <div class="section-header">
             <h2 id="spotlight-heading">Featured build spotlight</h2>
-            <span class="status-tag live">Live demo</span>
+            <span class="tag" data-tag="status" data-state="live">Live demo</span>
           </div>
           <div class="flow" data-featured-build>
             <h3 data-build-name>Urban Commuter Pro</h3>
@@ -111,7 +113,7 @@
               <li><strong>Build time</strong> <span data-build-time>6 hours</span></li>
               <li><strong>Range</strong> <span data-build-range>45 km</span></li>
             </ul>
-            <a class="cta" href="builds.html#urban-commuter-pro">See the full recipe</a>
+            <a class="cta" href="builds.html#build-commuter">See the full recipe</a>
           </div>
         </div>
         <aside class="highlight-panel" aria-labelledby="news-heading">
@@ -128,16 +130,12 @@
         </aside>
       </section>
 
-      <section aria-labelledby="quick-links-heading" style="margin-top: 3rem;">
+      <section aria-labelledby="quick-links-heading" class="section-gap-lg">
         <div class="section-header">
           <h2 id="quick-links-heading">Navigate your next ride</h2>
-          <span class="pill">Quick access</span>
+          <span class="tag" data-tag="pill">Quick access</span>
         </div>
         <ul class="quick-links" data-quick-links>
-          <li>
-            <span>Workshop calendar</span>
-            <a href="community.html#events" class="cta secondary">View</a>
-          </li>
           <li>
             <span>DIY setup guides</span>
             <a href="builds.html" class="cta secondary">Open</a>
@@ -146,13 +144,17 @@
             <span>Route library</span>
             <a href="routes.html" class="cta secondary">Explore</a>
           </li>
+          <li>
+            <span>Book the garage</span>
+            <a href="#contact" class="cta secondary">Reserve</a>
+          </li>
         </ul>
       </section>
 
-      <section aria-labelledby="services-heading" style="margin-top: 3rem;">
+      <section aria-labelledby="services-heading" class="section-gap-lg">
         <div class="section-header">
           <h2 id="services-heading">What happens inside the garage</h2>
-          <span class="pill">Crew favorites</span>
+          <span class="tag" data-tag="pill">Crew favorites</span>
         </div>
         <div class="card-grid">
           <article class="card">
@@ -184,6 +186,53 @@
           </article>
         </div>
       </section>
+
+      <section id="contact" aria-labelledby="contact-heading" class="section-gap-lg">
+        <div class="section-header">
+          <h2 id="contact-heading">Book the garage</h2>
+          <span class="tag" data-tag="pill">Contact</span>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Reserve a maintenance bay</h3>
+            <p>Need a suspension tune, controller flash, or quick diagnostic? Drop us a note and we will prep the right tools before you arrive.</p>
+            <ul class="meta-list">
+              <li><strong>Hours</strong> Tue–Sat · 16:00–22:00</li>
+              <li><strong>Phone</strong> +261 34 07 677 91</li>
+              <li><strong>Email</strong> hello@urbanscootergarage.mg</li>
+              <li><strong>WhatsApp</strong> +261 34 07 677 91</li>
+            </ul>
+            <p>
+              Tell us your scooter model, the service you need, and two preferred time slots. We reply within two hours during workshop days.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Workshop locator</h3>
+            <div class="map-frame">
+              <iframe
+                src="https://www.openstreetmap.org/export/embed.html?bbox=47.5245%2C-18.9165%2C47.5335%2C-18.9075&layer=mapnik&marker=-18.9128%2C47.5288"
+                loading="lazy"
+                title="Urban Scooter Garage location map"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <p class="map-credit">
+              Map data ©
+              <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener"
+                >OpenStreetMap contributors</a
+              >
+              ·
+              <a
+                href="https://www.openstreetmap.org/?mlat=-18.9128&mlon=47.5288#map=16/-18.9128/47.5288"
+                target="_blank"
+                rel="noopener"
+                >View larger map</a
+              >
+            </p>
+          </article>
+        </div>
+      </section>
     </main>
 
     <footer>
@@ -202,12 +251,12 @@
             <li class="resource-card">
               <strong>Reserve a bay</strong>
               <span>Lock a time slot with our mechanics.</span>
-              <a class="cta secondary" href="contact.html">Book now</a>
+              <a class="cta secondary" href="#contact">Book now</a>
             </li>
             <li class="resource-card">
               <strong>Submit your build</strong>
               <span>Share specs to feature on the community wall.</span>
-              <a class="cta secondary" href="community.html#submit">Submit</a>
+              <a class="cta secondary" href="builds.html">Submit</a>
             </li>
             <li class="resource-card">
               <strong>Ride archives</strong>

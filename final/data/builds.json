@@ -1,6 +1,6 @@
 [
   {
-    "id": "urban-commuter-pro",
+    "id": "build-commuter",
     "name": "Urban Commuter Pro",
     "tagline": "Upgrade your daily ride with precision suspension and extra range.",
     "difficulty": "Intermediate",
@@ -62,7 +62,7 @@
     ]
   },
   {
-    "id": "weekend-trail-scrambler",
+    "id": "build-trail",
     "name": "Weekend Trail Scrambler",
     "tagline": "Grip, torque, and lighting for dusty switchbacks just outside the city.",
     "difficulty": "Advanced",
@@ -124,7 +124,7 @@
     ]
   },
   {
-    "id": "studio-showcase-mini",
+    "id": "build-showcase",
     "name": "Studio Showcase Mini",
     "tagline": "Compact build focused on aesthetics and modular accessories for meetups.",
     "difficulty": "Beginner",
